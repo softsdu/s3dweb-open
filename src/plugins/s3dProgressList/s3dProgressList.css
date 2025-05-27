@@ -1,0 +1,142 @@
+.s3dProgressListContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.s3dProgressListToolbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+.s3dProgressListProgressBtn {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dProgressListProgressBtn:hover{
+    background-color: #444444;
+}
+.s3dProgressListItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+    cursor: default;
+}
+.s3dProgressListItem:hover{
+    background-color: #444444;
+}
+.s3dProgressListItemActive {
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dProgressListItemName {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.s3dProgressListItemTitle {
+    cursor: pointer;
+}
+.s3dProgressListItemBtn {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    line-height: 30px;
+    display: none;
+    text-align: center;
+}
+.s3dProgressListItem:hover .s3dProgressListItemBtn{
+    display: block;
+}
+.s3dProgressListNoneItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*菜单*/
+.s3dProgressListMenuOuterContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+}
+.s3dProgressListMenuBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.s3dProgressListMenuContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    background-color: #dddddd;
+    border: solid 1px #555555;
+    color: #000000;
+    border-radius: 3px;
+}
+.s3dProgressListMenuItem{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    cursor: default;
+}
+.s3dProgressListMenuItem:hover{
+    background-color: #ffffff;
+}
+.s3dProgressListNewItem{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.s3dProgressListNewItemProgressBtn{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #444444;
+    color: #999999;
+}
+.s3dProgressListNewItemProgressBtn:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+}
+.s3dProgressListNewItemProgressImage{
+    font-size: 13px;
+    padding-right: 5px;
+}

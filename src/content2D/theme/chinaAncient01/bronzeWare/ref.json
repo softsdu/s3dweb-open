@@ -1,0 +1,15 @@
+{
+    "js": [
+        {
+            "url": "../../content2D/theme/chinaAncient01/bronzeWare/js/bronzeWare.js"
+        }
+    ],
+    "css": [
+        {
+            "url": "../../content2D/theme/chinaAncient01/bronzeWare/css/bronzeWare.css"
+        },
+        {
+            "url": "../../content2D/theme/chinaAncient01/common/css/common.css"
+        }
+    ]
+}

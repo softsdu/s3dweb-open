@@ -1,0 +1,94 @@
+.s3dAnimationPlayerContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.s3dAnimationPlayerHeaderContainer{
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+.s3dAnimationPlayerHeader{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    border-bottom: solid 1px #666666;
+}
+.s3dAnimationPlayerListTitle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    text-indent: 10px;
+    font-weight: 600;
+    color: #999999;
+}
+.s3dAnimationPlayerListContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dAnimationPlayerItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    padding: 0 10px 0 10px;
+    cursor: default;
+}
+.s3dAnimationPlayerItem:hover{
+    background-color: #444444;
+}
+.s3dAnimationPlayerItemActive {
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dAnimationPlayerItemName {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.s3dAnimationPlayerItemIndex {
+    padding: 0 5px 0 5px;
+    color: #999999;
+}
+.s3dAnimationPlayerItemTitle {
+    cursor: pointer;
+}
+.s3dAnimationPlayerItemBtn {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    display: none;
+    color: #999999;
+}
+.s3dAnimationPlayerItemBtnPlay{
+    display: block;
+}
+.s3dAnimationPlayerItemRunning{
+}
+.s3dAnimationPlayerItemRunning .s3dAnimationPlayerItemBtnPlay{
+    display: none;
+}
+.s3dAnimationPlayerItemRunning .s3dAnimationPlayerItemBtnStop{
+    display: block;
+}
+.s3dAnimationPlayerNoneItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-style: italic;
+}

@@ -1,0 +1,12 @@
+.chinaAncient01Container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.chinaAncient01InnerContainer{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }

@@ -1,0 +1,423 @@
+.s3dAppSimpleTagEditorContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    overflow: hidden;
+}
+.s3dAppSimpleTagEditorSubContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}
+.s3dAppSimpleTagEditorSubContainerActive{
+    display: block;
+}
+.s3dAppSimpleTagEditorPartContainer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.s3dAppSimpleTagEditorToolbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+.s3dAppSimpleTagEditorToolbarBtn{
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin: 0 0 5px 0;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #383838;
+    cursor: pointer;
+}
+.s3dAppSimpleTagEditorToolbarBtn:hover{
+    background-color: #666666;
+}
+.s3dAppSimpleTagEditorToolbarBtnBack{
+
+}
+.s3dAppSimpleTagEditorListHeader{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    justify-content: left;
+    display: flex;
+    cursor: pointer;
+    border-top: solid 1px #383838;
+    background-color: #464646;
+}
+.s3dAppSimpleTagEditorListHeaderImage{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #999999;
+    font-size: 15px;
+    transform: rotate(0deg);
+}
+.s3dAppSimpleTagEditorPartContainerExpand .s3dAppSimpleTagEditorListHeader .s3dAppSimpleTagEditorListHeaderImage{
+    transform: rotate(90deg);
+}
+.s3dAppSimpleTagEditorPartContainerExpand .s3dAppSimpleTagEditorListContainer{
+    display: block;
+}
+.s3dAppSimpleTagEditorListHeaderTitle{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: auto;
+    text-align: left;
+}
+.s3dAppSimpleTagEditorListContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.s3dAppSimpleTagEditorListNewItem {
+    position: relative;
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.s3dAppSimpleTagEditorListNewPageBtn {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #444444;
+    color: #999999;
+}
+.s3dAppSimpleTagEditorListNewPageBtn:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+}
+.s3dAppSimpleTagEditorListNewPageImage {
+    font-size: 13px;
+    padding-right: 5px;
+}
+.s3dAppSimpleTagEditorItem{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+    cursor: default;
+}
+.s3dAppSimpleTagEditorItem:hover{
+    background-color: #444444;
+}
+.s3dAppSimpleTagEditorItemActive{
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dAppSimpleTagEditorNewItem{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.s3dAppSimpleTagEditorNewMaterialBtn{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #444444;
+    color: #999999;
+}
+.s3dAppSimpleTagEditorNewMaterialImage{
+    font-size: 13px;
+    padding-right: 5px;
+}
+.s3dAppSimpleTagEditorNewMaterialBtn:hover{
+    background-color: #555555;
+    color: #FFFFFF;
+}
+.s3dAppSimpleTagEditorItemImage{
+    position: relative;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px #666666;
+}
+.s3dAppSimpleTagEditorItemName{
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 40px;
+    margin-left: 15px;
+}
+.s3dAppSimpleTagEditorItemTitle{
+    cursor: pointer;
+}
+.s3dAppSimpleTagEditorItemTitle:hover{
+    text-decoration: underline;
+}
+.s3dAppSimpleTagEditorItemBtn{
+    position: relative;
+    width: 30px;
+    height: 100%;
+    line-height: 40px;
+    display: none;
+    text-align: center;
+}
+.s3dAppSimpleTagEditorItem:hover .s3dAppSimpleTagEditorItemBtn{
+    display: block;
+}
+
+.s3dAppSimpleTagEditorDetailItemInput{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2A2A;
+    border-width: 0;
+    color: #FFFFFF;
+}
+
+.s3dAppSimpleTagEditorDetailItemInputPop{
+    width: auto;
+    right: 24px;
+}
+.s3dAppSimpleTagEditorDetailBtnPop{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 24px;
+    height: 28px;
+    line-height: 28px;
+    color: #444444;
+    text-align: center;
+    cursor: default;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2A2A2A;
+}
+.s3dAppSimpleTagEditorDetailBtnImagePicker{
+    background-image: url("../../images/materialEditor/image.png");
+}
+.s3dAppSimpleTagEditorDetailBtnSystemMaterialPicker{
+    background-image: url("../../images/materialEditor/systemMaterial.png");
+}
+
+.s3dAppSimpleTagEditorDetailContainer{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.s3dAppSimpleTagEditorDetailContainerReadonly{
+
+}
+.s3dAppSimpleTagEditorDetailToolbar{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-bottom: solid 1px #444444;
+}
+.s3dAppSimpleTagEditorDetailBtn{
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #444444;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+    top: 0;
+    height: 30px;
+}
+.s3dAppSimpleTagEditorDetailBtn:hover{
+    background-color: #666666;
+}
+.s3dAppSimpleTagEditorDetailBackBtn{
+    position: absolute;
+    left: 5px;
+    width: 30px;
+}
+.s3dAppSimpleTagEditorDetailOkBtn {
+    position: absolute;
+    right: 5px;
+    width: 80px;
+}
+.s3dAppSimpleTagEditorDetailGroupContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dAppSimpleTagEditorDetailHeader{
+    position: relative;
+    height: 30px;
+    width: auto;
+    padding-left: 0;
+    padding-right: 8px;
+    cursor: pointer;
+    justify-content: left;
+    display: flex;
+    border-top: solid 1px #383838;
+    background-color: #464646;
+}
+.s3dAppSimpleTagEditorDetailHeaderImage{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    color: #999999;
+    text-align: center;
+}
+.s3dAppSimpleTagEditorDetailGroupContainerActive .s3dAppSimpleTagEditorDetailHeaderImage {
+    transform: rotate(90deg);
+}
+.s3dAppSimpleTagEditorDetailHeaderTitle{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: auto;
+    text-align: left;
+}
+.s3dAppSimpleTagEditorDetailGroupInnerContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 5px 0 5px 0;
+    display: none;
+}
+.s3dAppSimpleTagEditorDetailGroupContainerActive .s3dAppSimpleTagEditorDetailGroupInnerContainer {
+    display: block;
+}
+.s3dAppSimpleTagEditorDetailItem{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 34px;
+}
+.s3dAppSimpleTagEditorDetailItemHidden{
+    display: none;
+}
+.s3dAppSimpleTagEditorDetailItemTitle{
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.s3dAppSimpleTagEditorDetailItemValue{
+    position: absolute;
+    left: 110px;
+    top: 3px;
+    right: 3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #FCFCFC;
+}
+.s3dAppSimpleTagEditorDetailItemInput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2A2A2A;
+    border-width: 0;
+    color: #FFFFFF;
+}
+.s3dAppSimpleTagEditorDetailItemInput:focus{
+    outline: none;
+}
+.s3dAppSimpleTagEditorDetailContainerReadonly .s3dAppSimpleTagEditorDetailItemInput{
+    color: #999999;
+}
+.s3dAppSimpleTagEditorDetailItemInputBoolean{
+    height: 20px;
+}
+
+/*菜单*/
+.s3dAppSimpleTagEditorMenuOuterContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+}
+.s3dAppSimpleTagEditorMenuBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.s3dAppSimpleTagEditorMenuContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    background-color: #dddddd;
+    border: solid 1px #555555;
+    color: #000000;
+    border-radius: 3px;
+}
+.s3dAppSimpleTagEditorMenuItem{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    cursor: default;
+}
+.s3dAppSimpleTagEditorMenuItem:hover{
+    background-color: #ffffff;
+}
+.s3dAppSimpleTagEditorTagBtn{
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dAppSimpleTagEditorTagBtn:hover{
+    background-color: #444444;
+}
+.s3dAppSimpleTagEditorDetailBackBtn{
+
+}

@@ -1,0 +1,21 @@
+{
+    "js": [
+        {
+            "url": "../../content2D/theme/basic/gray/js/gray.js"
+        },
+        {
+            "url": "../../content2D/common/js/common.js"
+        }
+    ],
+    "css": [
+        {
+            "url": "../../content2D/theme/basic/gray/css/gray.css"
+        },
+        {
+            "url": "../../content2D/theme/basic/common/css/common.css"
+        },
+        {
+            "url": "../../content2D/common/css/common.css"
+        }
+    ]
+}

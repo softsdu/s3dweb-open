@@ -1,0 +1,12 @@
+{
+    "js": [
+        {
+            "url": "../../content2D/navigator/chinaAncient/js/navigator.js"
+        }
+    ],
+    "css": [
+        {
+            "url": "../../content2D/navigator/chinaAncient/css/navigator.css"
+        }
+    ]
+}

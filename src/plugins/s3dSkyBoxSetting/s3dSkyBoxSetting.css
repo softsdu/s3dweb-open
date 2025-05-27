@@ -1,0 +1,197 @@
+.s3dSkyBoxSettingContainer {
+	position: absolute; 
+    overflow: hidden;  
+    font-size: 13px;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;  
+	text-align:center;
+	z-index: 99999;
+} 
+.s3dSkyBoxSettingBackground{
+	position: absolute;	
+	width: 100%;
+	height: 100%;  
+	background-color: #AAAAAA;
+	opacity: 0.5;
+	filter: alpha(opacity=50); 
+}
+.s3dSkyBoxSettingOuterContainer{
+	position: absolute; 
+	width: 400px;
+	height: 260px;
+	top: 20%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -200px;
+	line-height: 100px;
+	background-color: #444444;
+	border-radius: 5px;
+	z-index: 99999;
+}
+.s3dSkyBoxSettingInnerContainer{
+	position: absolute; 
+	width: 100%;
+	bottom: 0;
+	top:35px;
+	left:0;
+	text-align: center;
+}
+.s3dSkyBoxSettingHeader{
+	position: absolute; 
+    left:8px;
+    top:2px;
+	right:8px;
+	height: 33px;
+	border-bottom:1px solid #888888;
+}
+.s3dSkyBoxSettingTitle{
+	position: absolute; 
+    left:5px;
+    top:0;
+	width:100px;
+	bottom:0;
+	line-height:32px; 
+	color:#CCCCCC;
+	font-size:14px;
+	text-align: left;
+}
+.s3dSkyBoxSettingCloseBtn{
+	position: absolute;  
+    top:5px;
+	right:0;
+	height:24px;
+	width:20px;
+	line-height:24px;
+	font-size:24px;
+	text-align:center;
+	color:#AAAAAA;
+	cursor: default;
+}
+.s3dSkyBoxSettingCloseBtn:hover{
+	color:#EEEEEE;
+}
+.s3dSkyBoxSettingItemGroupContainer{
+	position: relative;
+	height: 35px;
+	width: 100%;
+}
+.s3dSkyBoxSettingItemGroupTitle{
+	position: absolute;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
+	top: 10px;
+	line-height: 30px;
+	color: #CCCCCC;
+	font-weight: 600;
+	text-align: left;
+	border-bottom: solid 1px #555555;
+}
+.s3dSkyBoxSettingItemContainer{
+	position: relative;
+	height: 35px;
+	width: 100%;
+}
+.s3dSkyBoxSettingItemTitle{
+	position: absolute;
+	left: 0;
+	width: 100px;
+	bottom: 0;
+	top: 5px;
+	line-height: 30px;
+	color: #EEEEEE;
+	text-align: right;
+}
+.s3dSkyBoxSettingItemValue{
+	position: absolute;
+	right: 15px;
+	left: 110px;
+	bottom: 0px;
+	top: 5px;
+	line-height: 30px;
+}
+.s3dSkyBoxSettingItemInput{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	border-width: 0;
+	background-color: #2A2A2A;
+	color: #FFFFFF;
+}
+.s3dSkyBoxSettingItemInput:focus{
+	outline: none;
+}
+.s3dSkyBoxSettingItemBtnPop{
+	position: absolute;
+	top: 1px;
+	right: 0;
+	width: 24px;
+	height: 28px;
+	line-height: 28px;
+	color: #444444;
+	text-align: center;
+	cursor: default;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #2A2A2A;
+}
+.s3dSkyBoxSettingItemBtnImagePicker{
+	background-image: url(../../images/materialEditor/image.png);
+}
+.s3dSkyBoxSettingItemBoolean{
+	height: 20px;
+	width: 20px;
+} 
+.s3dSkyBoxSettingItemString{
+	text-align: left;
+} 
+.s3dSkyBoxSettingItemDecimal{
+	text-align: right;
+} 
+.s3dSkyBoxSettingItemReadonly{
+    background-color: #999999;
+} 
+.s3dSkyBoxSettingGroupButton{ 
+	position: absolute;
+	right: 15px;
+	bottom: 0;
+	border: solid 1px #555555;
+    background-color: #505050;
+    border-radius: 3px;
+	color: #CCCCCC;
+	line-height: 25px;
+	cursor: pointer;
+	padding-left: 5px;
+	padding-right: 5px; 
+} 
+.s3dSkyBoxSettingGroupButton:hover{
+	color: #FFFFFF;
+    background-color: #666666;
+} 
+.s3dSkyBoxSettingBottomContainer{
+	position: relative;
+	height: 40px;
+	width: 100%;
+}
+.s3dSkyBoxSettingBottomButton{
+	position: relative;
+	margin-right: 15px;
+	margin-top: 10px;
+	float: right;
+	height: 30px;
+	width: 100px;
+	line-height: 30px;
+	border: solid 1px #555555;
+    background-color: #505050;
+    border-radius: 3px;
+	color: #EEEEEE;
+	cursor: pointer;
+}
+.s3dSkyBoxSettingBottomButton:hover{
+	color: #222222; 
+	background-color: #DDDDDD;
+	font-weight: 600;
+} 

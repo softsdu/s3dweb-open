@@ -1,0 +1,100 @@
+.chinaAncient01BronzeWareInnerContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.chinaAncient01BronzeWareHeader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+}
+.chinaAncient01BronzeWareContent{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+}
+.chinaAncient01BronzeWareToolbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+}
+.chinaAncient01BronzeWareTitle{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    font-size: 90px;
+    text-align: left;
+    letter-spacing: 10px;
+}
+.chinaAncient01BronzeWareSubTitle{
+    position: absolute;
+    top: 170px;
+    left: 50px;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 40px;
+    text-align: left;
+    letter-spacing: 3px;
+}
+.chinaAncient01BronzeWareDescription{
+    position: absolute;
+    left: 50px;
+    bottom: 20px;
+    height: auto;
+    max-height: 500px;
+    right: 50px;
+    line-height: 28px;
+    font-size: 15px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+.chinaAncient01BronzeWareBtn{
+    position: relative;
+    margin: 10px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    background-color: #2A2A2A;
+    opacity: 30%;
+}
+.chinaAncient01BronzeWareBtn:hover{
+    background-color: #2A2A2A;
+    opacity: 70%;
+}
+.chinaAncient01BronzeWareBtnHome{
+    background-image: url("../image/toolbar/home.png");
+}
+.chinaAncient01BronzeWareBtnRotate{
+    background-image: url("../image/toolbar/rotate.png");
+}
+.chinaAncient01BronzeWareBtnShare{
+    background-image: url("../image/toolbar/share.png");
+}
+.chinaAncient01BronzeWareBtnLike{
+    background-image: url("../image/toolbar/like.png");
+}

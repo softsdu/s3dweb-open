@@ -1,0 +1,304 @@
+.s3dContent2DEditorContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.s3dContent2DEditorToolbar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+.s3dContent2DEditorToolbarBtn {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dContent2DEditorToolbarBtn:hover{
+    background-color: #555555;
+}
+.s3dContent2DEditorHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 100%;
+    display: flex;
+    padding: 0 5px 2px 5px;
+    border-bottom: solid 1px #222222;
+}
+.s3dContent2DEditorInner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.s3dContent2DEditorGroupContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 10px 0 10px;
+}
+.s3dContent2DEditorGroupHeader{
+    position: relative;
+    width: auto;
+    height: 35px;
+    text-align: left;
+    color: #ffffff;
+    padding: 0 5px 0 5px;
+    border-bottom: solid 1px #404040;
+}
+.s3dContent2DEditorGroupTitle{
+    position: absolute;
+    left: 15px;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    color: #999999;
+}
+.s3dContent2DEditorSubContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dContent2DEditorTextItem{
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    right: 0;
+    height: 30px;
+    text-align: left;
+    line-height: 15px;
+}
+.s3dContent2DEditorInputPageName{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #000000;
+    outline: none;
+}
+.s3dContent2DEditorInputPageName::placeholder{
+    font-size: 14px;
+}
+.s3dContent2DEditorBtn{
+    position: relative;
+    width: auto;
+    padding: 0 10px 0 10px;
+    margin: 0 0 0 5px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    min-width: 32px;
+    font-size: 16px;
+    cursor: default;
+    color: #acc5ff;
+}
+.s3dContent2DEditorBtn:hover{
+    background-color: #555555;
+}
+.s3dContent2DEditorItem{
+    position: relative;
+    width: 50%;
+    height: 34px;
+    justify-content: left;
+    padding-left: 2px;
+    cursor: default;
+    display: inline-block;
+}
+.s3dContent2DEditorItemTitle{
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    width: 75px;
+    height: 30px;
+    text-align: left;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+}
+.s3dContent2DEditorItemValue{
+    position: absolute;
+    left: 110px;
+    top: 3px;
+    right: 3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+.s3dContent2DEditorItemInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2A2A2A;
+    border-width: 0;
+    text-indent: 3px;
+}
+.s3dContent2DEditorItemPop{
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 26px;
+    line-height: 26px;
+    color: #dff3ff;
+    background-color: #393939;
+    text-align: center;
+    cursor: default;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.s3dContent2DEditorItemInput:focus{
+    outline: none;
+}
+.s3dContent2DEditorItemInputReadonly {
+    color: #999999;
+}
+.s3dContent2DEditorAnimationSelectContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #fcfcfc;
+}
+.s3dContent2DEditorAnimationSelectInnerContainer{
+    position: absolute;
+    top: 0;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.s3dContent2DEditorAnimationSelectHeader{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    left: 0;
+    right: 0;
+    border-bottom: solid 1px #555555;
+}
+.s3dContent2DEditorAnimationSelectHeaderTitle{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    color: #999999;
+}
+.s3dContent2DEditorAnimationSelectHeaderTitleName{
+    left: 0;
+    right: 150px;
+}
+.s3dContent2DEditorAnimationSelectHeaderTitleLoop{
+    right: 50px;
+    width: 100px;
+}
+.s3dContent2DEditorAnimationSelectHeaderTitleOperate{
+    right: 0;
+    width: 50px;
+}
+.s3dContent2DEditorAnimationSelectListContainer{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+.s3dContent2DEditorAnimationSelectItem{
+    position: relative;
+    height: 35px;
+    width: 100%;
+}
+.s3dContent2DEditorAnimationSelectNoneItem{
+    position: relative;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    line-height: 35px;
+}
+.s3dContent2DEditorAnimationSelectNoneItemHidden{
+    display: none;
+}
+.s3dContent2DEditorAnimationSelectItemInput{
+    position: absolute;
+    top: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #2A2A2A;
+    border-width: 0;
+    text-indent: 3px;
+}
+.s3dContent2DEditorAnimationSelectItemInput:focus{
+    outline: none;
+}
+.s3dContent2DEditorAnimationSelectItemInputName{
+    left: 0;
+    right: 150px;
+}
+.s3dContent2DEditorAnimationSelectItemInputLoop{
+    right: 50px;
+    width: 100px;
+    margin: 0;
+    height: 20px;
+}
+.s3dContent2DEditorAnimationSelectItemInputOperate{
+    right: 0;
+    width: 50px;
+    cursor: default;
+    background-color: transparent;
+}
+.s3dContent2DEditorAnimationSelectItemRemoveBtn{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    line-height: 30px;
+}
+.s3dContent2DEditorAnimationSelectBottomContainer{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+}
+.s3dContent2DEditorAnimationSelectBtn{
+    position: absolute;
+    width: 90px;
+    top: 5px;
+    bottom: 5px;
+    line-height: 30px;
+    border: solid 1px #555555;
+    background-color: #cccccc;
+    border-radius: 3px;
+    color: #444444;
+    text-align: center;
+    cursor: pointer;
+}
+.s3dContent2DEditorAnimationSelectBtnOk{
+    right: 10px;
+}
+.s3dContent2DEditorAnimationSelectBtnAddItem{
+    left: 10px;
+}
+.s3dContent2DEditorAnimationSelectBtn:hover{
+    color: #222222;
+    background-color: #ffffff;
+}

@@ -1,0 +1,73 @@
+.chinaAncient01ModelCenterAndSixInnerContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.chinaAncient01ModelCenterAndSixItemContainer{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+.chinaAncient01ModelCenterAndSixInnerContainerLeft{
+    left: 0;
+}
+.chinaAncient01ModelCenterAndSixInnerContainerRight{
+    right: 0;
+}
+.chinaAncient01ModelCenterAndSixItemContainerBackground{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.chinaAncient01ModelCenterAndSixInnerContainerLeft .chinaAncient01ModelCenterAndSixItemContainerBackground{
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.3) 80%,
+            rgba(0, 0, 0, 0.2) 90%,
+            rgba(0, 0, 0, 0) 100%
+    );
+}
+.chinaAncient01ModelCenterAndSixInnerContainerRight .chinaAncient01ModelCenterAndSixItemContainerBackground{
+    background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.3) 0%,
+            rgba(0, 0, 0, 0.3) 80%,
+            rgba(0, 0, 0, 0.2) 90%,
+            rgba(0, 0, 0, 0) 100%
+    );
+}
+.chinaAncient01ModelCenterAndSixItem{
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding: 0 40px 0 40px;
+}
+.chinaAncient01ModelCenterAndSixItemTitle{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+    padding: 10px 0 0 0;
+    letter-spacing: 1px;
+}
+.chinaAncient01ModelCenterAndSixInnerContainerLeft .chinaAncient01ModelCenterAndSixItemTitle{
+    text-align: left;
+}
+.chinaAncient01ModelCenterAndSixInnerContainerRight .chinaAncient01ModelCenterAndSixItemTitle{
+    text-align: right;
+}
+.chinaAncient01ModelCenterAndSixItemDescription{
+    position: relative;
+    font-size: 18px;
+    height: auto;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: justify;
+}

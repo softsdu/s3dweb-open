@@ -1,0 +1,935 @@
+.s3dAnimationEditorContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.s3dAnimationEditorToolbar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+.s3dAnimationEditorToolbarBtn {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dAnimationEditorToolbarBtn:hover{
+    background-color: #555555;
+}
+.s3dAnimationEditorLeftContainer{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px #222222;
+    font-size: 13px;
+}
+.s3dAnimationEditorCenterContainer{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.s3dAnimationEditorCenterContainer ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+.s3dAnimationEditorLeftHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 100%;
+    display: flex;
+    padding: 0 5px 2px 5px;
+    border-bottom: solid 1px #222222;
+}
+.s3dAnimationEditorLeftInner{
+    position: absolute;
+    top: 32px;
+    left: 0;
+    bottom: 30px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.s3dAnimationEditorLeftFooter{
+    position: absolute;
+    left: 0;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-top: solid 1px #222222;
+}
+.s3dAnimationEditorGroupContainer{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.s3dAnimationEditorGroupContainerExpand{
+}
+.s3dAnimationEditorGroupHeader{
+    position: relative;
+    height: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    cursor: default;
+}
+.s3dAnimationEditorGroupHeader:hover{
+    background-color: #555555;
+}
+.s3dAnimationEditorGroupHeaderImage{
+    position: relative;
+    width: 24px;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+}
+.s3dAnimationEditorGroupHeaderDeleteBtn{
+    position: relative;
+    width: 24px;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    display: none;
+}
+.s3dAnimationEditorGroupContainerExpand .s3dAnimationEditorGroupHeaderImage{
+    transform: rotate(90deg);
+}
+.s3dAnimationEditorGroupContainer:hover .s3dAnimationEditorGroupHeaderDeleteBtn{
+    display: block;
+}
+.s3dAnimationEditorGroupHeaderTitle{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    line-height: 24px;
+}
+.s3dAnimationEditorGroupInner{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: none;
+}
+.s3dAnimationEditorGroupContainerExpand .s3dAnimationEditorGroupInner{
+   display: block;
+}
+
+.s3dAnimationEditorTrackHeader{
+    position: relative;
+    height: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.s3dAnimationEditorTrackHeader:hover{
+    background-color: #555555;
+}
+.s3dAnimationEditorTrackHeaderTitle{
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 24px;
+    text-indent: 36px;
+    text-align: right;
+    padding: 0 15px 0 0;
+}
+.s3dAnimationEditorTrackHeaderValue{
+    position: relative;
+    padding: 2px 5px 2px 0;
+    width: 100px;
+}
+.s3dAnimationEditorInputValue{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background-color: #2A2A2A;
+    border-width: 0;
+    color: #FFFFFF;
+    text-indent: 3px;
+}
+.s3dAnimationEditorInputValueReadonly{
+    color: #999999;
+}
+.s3dAnimationEditorInputContainer{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+}
+.s3dAnimationEditorInputAnimationName{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #000000;
+    outline: none;
+}
+.s3dAnimationEditorBtn{
+    position: relative;
+    width: auto;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    min-width: 32px;
+    font-size: 16px;
+    cursor: default;
+    color: #acc5ff;
+}
+.s3dAnimationEditorBtn:hover{
+    background-color: #555555;
+}
+.s3dAnimationEditorPreviewBtn{
+}
+.s3dAnimationEditorAddKeyFrameBtn{
+    font-size: 19px;
+}
+.s3dAnimationEditorAddObjectGroupBtn{
+    font-size: 19px;
+}
+.s3dAnimationEditorTabBtn{
+    position: relative;
+    width: auto;
+    height: 30px;
+    min-width: 80px;
+    line-height: 30px;
+    text-align: center;
+    cursor: default;
+}
+.s3dAnimationEditorTabBtn:hover{
+    background-color: #555555;
+}
+.s3dAnimationEditorTabBtnActive{
+    background-color: #555555;
+}
+.s3dAnimationEditorCenterHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 100%;
+    border-bottom: solid 1px #222222;
+    overflow: hidden;
+}
+.s3dAnimationEditorKeyFrameRange{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #4A4A4A;
+}
+.s3dAnimationEditorTimeline{
+    position: relative;
+    height: 100%;
+    display: inline-flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    padding: 0 50px 0 0;
+}
+.s3dAnimationEditorCenterInner{
+    position: absolute;
+    left: 0;
+    top: 32px;
+    width: 100%;
+    bottom: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.s3dAnimationEditorCenterFooter{
+    position: absolute;
+    left: 0;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-top: solid 1px #222222;
+}
+.s3dAnimationEditorSubContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    padding: 0 50px 0 0;
+}
+.s3dAnimationEditorSubContainerActive{
+    display: block;
+}
+.s3dAnimationEditorTrackItem{
+    position: relative;
+    height: 24px;
+    width: 100%;
+}
+.s3dAnimationEditorTrackItem:hover{
+    background-color: #555555;
+}
+.s3dAnimationEditorTrackItemHidden{
+    display: none;
+}
+
+.s3dAnimationEditorItemActive{
+    background-color: #555555;
+}
+
+.s3dAnimationEditorMenuOuterContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+}
+.s3dAnimationEditorMenuBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.s3dAnimationEditorMenuContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    background-color: #dddddd;
+    border: solid 1px #555555;
+    color: #000000;
+    border-radius: 3px;
+}
+.s3dAnimationEditorMenuItem{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    cursor: default;
+    display: flex;
+}
+.s3dAnimationEditorMenuItem:hover{
+    background-color: #ffffff;
+}
+.s3dAnimationEditorKeyFrameTypeBtn{
+    padding: 0 20px 0 0;
+}
+.s3dAnimationEditorMenuItemSplitter{
+    position: relative;
+    height: 5px;
+    line-height: 5px;
+    width: 100%;
+    padding: 0 5px 0 5px;
+    cursor: default;
+    display: flex;
+    justify-content: left;
+}
+.s3dAnimationEditorMenuItemSplitterLine{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: solid 1px #888888;
+}
+.s3dAnimationEditorMenuItemImage{
+    position: relative;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+
+.s3dAnimationEditorPropertyList{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+.s3dAnimationEditorPropertyItem{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.s3dAnimationEditorPropertyItem:hover{
+    background-color: #555555;
+}
+.s3dAnimationEditorTimeSplitLine{
+    position: absolute;
+    left: 0;
+    width: 1px;
+    top: 0;
+    bottom:0;
+    border-left: solid 1px #ffffff;
+    z-index: 2;
+}
+.s3dAnimationEditorKeyFrameBtn{
+    position: absolute;
+    left: 0;
+    width: 11px;
+    top: 2px;
+    bottom: 2px;
+    font-size: 20px;
+    color: #777777;
+    cursor: default;
+    text-align: center;
+    line-height: 20px;
+}
+.s3dAnimationEditorKeyFrameBtn:hover{
+    color: #ffffff;
+}
+.s3dAnimationEditorKeyFrameBtnActive{
+    color: #7bff00;
+}
+.s3dAnimationEditorKeyFrameBtnActive:hover{
+    color: #7bff00;
+}
+.s3dAnimationEditorTimeSpan{
+    position: relative;
+    width: 50px;
+    height: 100%;
+}
+.s3dAnimationEditorTimeSpanInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.s3dAnimationEditorTimeSpanLine{
+    position: absolute;
+    left: 25px;
+    width: 1px;
+    height: 15px;
+    bottom: 0;
+    border-left: solid 1px #888888;
+    display: none;
+}
+.s3dAnimationEditorTimeSpanText{
+    position: absolute;
+    left: 28px;
+    width: auto;
+    height: auto;
+    top: 5px;
+    font-size: 11px;
+    display: none;
+    color: #888888;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorTimeSpan{
+    width: 50px;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorTimeSpan{
+    width: 40px;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorTimeSpan{
+    width: 30px;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorTimeSpan{
+    width: 20px;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorTimeSpan{
+    width: 10px;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorTimeSpan{
+    width: 5px;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorTimeSpan{
+    width: 4px;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorTimeSpan{
+    width: 3px;
+}
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorTimeSpan{
+    width: 2px;
+}
+.s3dAnimationEditorZoomLevel1 .s3dAnimationEditorTimeSpan{
+    width: 1px;
+}
+
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorTimeSpanLine{
+    left: 25px;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorTimeSpanLine{
+    left: 20px;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorTimeSpanLine{
+    left: 15px;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorTimeSpanLine{
+    left: 10px;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorTimeSpanLine{
+    left: 5px;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorTimeSpanLine{
+    left: 3px;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorTimeSpanLine{
+    left: 2px;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorTimeSpanLine{
+    left: 2px;
+}
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorTimeSpanLine{
+    left: 1px;
+}
+.s3dAnimationEditorZoomLevel1 .s3dAnimationEditorTimeSpanLine{
+    left: 1px;
+}
+
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorTimeSpanText{
+    left: 28px;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorTimeSpanText{
+    left: 23px;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorTimeSpanText{
+    left: 18px;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorTimeSpanText{
+    left: 13px;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorTimeSpanText{
+    left: 8px;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorTimeSpanText{
+    left: 5px;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorTimeSpanText{
+    left: 5px;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorTimeSpanText{
+    left: 4px;
+}
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorTimeSpanText{
+    left: 3px;
+}
+.s3dAnimationEditorZoomLevel1 .s3dAnimationEditorTimeSpanText{
+    left: 3px;
+}
+
+.s3dAnimationEditorZoomLevel1 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanText{
+    display: block;
+}
+
+
+.s3dAnimationEditorZoomLevel1 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel1 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+.s3dAnimationEditorZoomLevel1 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+.s3dAnimationEditorZoomLevel2 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel3 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel4 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+.s3dAnimationEditorZoomLevel5 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel6 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel7 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel8 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel9 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv60 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv30 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv15 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv5 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorZoomLevel10 .s3dAnimationEditorIntDiv1 .s3dAnimationEditorTimeSpanLine{
+    display: block;
+}
+.s3dAnimationEditorEventEditContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #fcfcfc;
+}
+.s3dAnimationEditorEventEditInnerContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 40px;
+    overflow: hidden;
+}
+.s3dAnimationEditorEventEditHeader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 40px;
+    right: 0;
+    display: flex;
+    justify-content: left;
+    cursor: pointer;
+}
+.s3dAnimationEditorEventEditHeaderItem{
+    position: relative;
+    width: auto;
+    border-top: solid 3px transparent;
+    height: 100%;
+    line-height: 40px;
+    color: #CCCCCC;
+}
+.s3dAnimationEditorEventEditHeaderItem:hover{
+    color: #fcfcfc;
+}
+.s3dAnimationEditorEventEditHeaderItemActive{
+    border-top: solid 3px #24417c;
+    color: #fcfcfc;
+    background-color: #383838;
+}
+.s3dAnimationEditorEventEditHeaderItemTitle{
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding: 3px 20px 0 20px;
+    text-align: center;
+}
+.s3dAnimationEditorEventEditContentContainer{
+    position: absolute;
+    left: 0;
+    top: 40px;
+    bottom: 0;
+    right: 0;
+    background-color: #383838;
+}
+.s3dAnimationEditorEventEditContentItem{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2A2A;
+    display: none;
+}
+.s3dAnimationEditorEventEditItemInputPrefix{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0;
+    height: 24px;
+    line-height: 24px;
+    border-bottom: solid 1px #383838;
+    color: #9bb4ff;
+}
+.s3dAnimationEditorEventEditItemInput{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 24px;
+    bottom: 24px;
+    line-height: 24px;
+    background-color: #2A2A2A;
+    border-width: 0;
+    resize: none;
+    overflow: auto;
+    text-indent: 0;
+}
+.s3dAnimationEditorEventEditItemInputPostfix{
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 0;
+    height: 24px;
+    line-height: 24px;
+    border-top: solid 1px #383838;
+    padding: 0 5px 0 5px;
+    color: #9bb4ff;
+}
+.s3dAnimationEditorEventEditContentItemActive{
+    display: block;
+}
+.s3dAnimationEditorEventEditItemInput:focus{
+    outline: none;
+}
+.s3dAnimationEditorEventEditBottomContainer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    border-top: solid 1px #4c4c4c;
+    display: flex;
+    justify-content: right;
+}
+.s3dAnimationEditorEventEditBtn{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    margin: 5px;
+    text-align: center;
+    border: solid 1px #6A6A6A;
+    background-color: #777777;
+    border-radius: 5px;
+    color: #EEEEEE;
+    line-height: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,1033 @@
+.s3dProgressEditorContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.s3dProgressEditorToolbar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+.s3dProgressEditorToolbarBtn {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dProgressEditorToolbarBtn:hover{
+    background-color: #666666;
+}
+.s3dProgressEditorLeftContainer{
+    position: relative;
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px #222222;
+    font-size: 13px;
+}
+.s3dProgressEditorCenterContainer{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.s3dProgressEditorCenterContainer ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: transparent;
+}
+.s3dProgressEditorLeftHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 100%;
+    display: flex;
+    padding: 0 5px 2px 5px;
+    border-bottom: solid 1px #222222;
+}
+.s3dProgressEditorLeftInner{
+    position: absolute;
+    top: 32px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.s3dProgressEditorLeftFooter{
+    position: absolute;
+    left: 0;
+    height: 30px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-top: solid 1px #222222;
+}
+.s3dProgressEditorGroupContainer{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.s3dProgressEditorGroupContainerExpand{
+}
+.s3dProgressEditorGroupHeader{
+    position: relative;
+    height: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    cursor: default;
+}
+.s3dProgressEditorGroupHeader:hover .s3dProgressEditorTitleName{
+    font-weight: 600;
+}
+.s3dProgressEditorGroupHeaderImage{
+    position: relative;
+    width: 24px;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+}
+.s3dProgressEditorGroupHeaderBtn{
+    position: relative;
+    width: 24px;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    display: none;
+    cursor: default;
+}
+.s3dProgressEditorGroupContainerExpand > .s3dProgressEditorGroupHeader > .s3dProgressEditorGroupHeaderImage{
+    transform: rotate(90deg);
+}
+.s3dProgressEditorGroupHeader:hover .s3dProgressEditorGroupHeaderBtn{
+    display: block;
+}
+.s3dProgressEditorGroupHeaderBtn:hover{
+    font-weight: 600;
+    background-color: #666666;
+}
+.s3dProgressEditorGroupHeaderTitle{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    line-height: 24px;
+}
+.s3dProgressEditorGroupInner{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: none;
+    padding: 0 0 0 15px;
+}
+.s3dProgressEditorGroupContainerExpand > .s3dProgressEditorGroupInner{
+   display: block;
+}
+
+.s3dProgressEditorStepHeader{
+    position: relative;
+    height: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+.s3dProgressEditorStepHeader:hover .s3dProgressEditorTitleName{
+    font-weight: 600;
+}
+.s3dProgressEditorStepHeaderTitle{
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 24px;
+    text-indent: 24px;
+    text-align: left;
+    padding: 0 15px 0 0;
+}
+.s3dProgressEditorStepHeaderBtn{
+    position: relative;
+    width: 24px;
+    height: 100%;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    display: none;
+    cursor: default;
+}
+.s3dProgressEditorStepHeader:hover .s3dProgressEditorStepHeaderBtn{
+    display: block;
+}
+.s3dProgressEditorStepHeaderBtn:hover{
+    font-weight: 600;
+    background-color: #666666;
+}
+.s3dProgressEditorInputValue{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    background-color: #2A2A2A;
+    border-width: 0;
+    color: #FFFFFF;
+    text-indent: 3px;
+}
+.s3dProgressEditorInputValueReadonly{
+    color: #999999;
+}
+.s3dProgressEditorInputContainer{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+}
+.s3dProgressEditorInputProgressName{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #000000;
+    outline: none;
+}
+.s3dProgressEditorBtn{
+    position: relative;
+    width: auto;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    min-width: 32px;
+    font-size: 16px;
+    cursor: default;
+    color: #acc5ff;
+}
+.s3dProgressEditorBtn:hover{
+    background-color: #666666;
+}
+.s3dProgressEditorGenerateAnimationBtn{
+}
+.s3dProgressEditorAddGroupBtn{
+}
+.s3dProgressEditorAddStepBtn{
+}
+.s3dProgressEditorGenerateAnimationBtn{
+}
+.s3dProgressEditorTabBtn{
+    position: relative;
+    width: auto;
+    height: 30px;
+    min-width: 80px;
+    line-height: 30px;
+    text-align: center;
+    cursor: default;
+}
+.s3dProgressEditorTabBtn:hover{
+    background-color: #666666;
+}
+.s3dProgressEditorTabBtnActive{
+    background-color: #555555;
+}
+.s3dProgressEditorCenterHeader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32px;
+    width: 100%;
+    border-bottom: solid 1px #222222;
+    overflow: hidden;
+}
+.s3dProgressEditorKeyFrameRange{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #4A4A4A;
+}
+.s3dProgressEditorTimeline{
+    position: relative;
+    height: 100%;
+    display: inline-flex;
+    justify-content: left;
+    flex-wrap: nowrap;
+    padding: 0 50px 0 0;
+}
+.s3dProgressEditorCenterInner{
+    position: absolute;
+    left: 0;
+    top: 32px;
+    width: 100%;
+    bottom: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.s3dProgressEditorCenterFooter{
+    position: absolute;
+    left: 0;
+    height: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    border-top: solid 1px #222222;
+}
+.s3dProgressEditorSubContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    padding: 0 50px 0 0;
+}
+.s3dProgressEditorSubContainerActive{
+    display: block;
+}
+.s3dProgressEditorTrackContainer{
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+.s3dProgressEditorTrackContainerExpand{
+}
+.s3dProgressEditorTrackSubContainer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: none;
+}
+.s3dProgressEditorTrackContainerExpand > .s3dProgressEditorTrackSubContainer{
+    display: block;
+}
+.s3dProgressEditorTrackItem{
+    position: relative;
+    height: 24px;
+    width: 100%;
+}
+.s3dProgressEditorTrackItem:hover{
+    font-weight: 600;
+}
+.s3dProgressEditorTrackItemHidden{
+    display: none;
+}
+
+.s3dProgressEditorItemActive{
+    background-color: #555555;
+}
+
+.s3dProgressEditorMenuOuterContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+}
+.s3dProgressEditorMenuBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.s3dProgressEditorMenuContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    background-color: #dddddd;
+    border: solid 1px #666666;
+    color: #000000;
+    border-radius: 3px;
+}
+.s3dProgressEditorMenuItem{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    cursor: default;
+    display: flex;
+}
+.s3dProgressEditorMenuItem:hover{
+    background-color: #ffffff;
+}
+.s3dProgressEditorKeyFrameTypeBtn{
+    padding: 0 20px 0 0;
+}
+.s3dProgressEditorMenuItemSplitter{
+    position: relative;
+    height: 5px;
+    line-height: 5px;
+    width: 100%;
+    padding: 0 5px 0 5px;
+    cursor: default;
+    display: flex;
+    justify-content: left;
+}
+.s3dProgressEditorMenuItemSplitterLine{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: solid 1px #888888;
+}
+.s3dProgressEditorMenuItemImage{
+    position: relative;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: block;
+}
+
+.s3dProgressEditorPropertyList{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+.s3dProgressEditorPropertyItem{
+    position: relative;
+    height: 30px;
+    width: 100%;
+    text-align: left;
+    line-height: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.s3dProgressEditorPropertyItem:hover{
+    background-color: #666666;
+}
+.s3dProgressEditorTimeSplitLine{
+    position: absolute;
+    left: 0;
+    width: 1px;
+    top: 0;
+    bottom:0;
+    border-left: solid 1px #ffffff;
+    z-index: 2;
+}
+.s3dProgressEditorKeyFrameBtn{
+    position: absolute;
+    left: 0;
+    width: 11px;
+    top: 2px;
+    bottom: 2px;
+    font-size: 20px;
+    color: #777777;
+    cursor: default;
+    text-align: center;
+    line-height: 20px;
+}
+.s3dProgressEditorKeyFrameBtn:hover{
+    color: #ffffff;
+}
+.s3dProgressEditorKeyFrameBtnActive{
+    color: #7bff00;
+}
+.s3dProgressEditorKeyFrameBtnActive:hover{
+    color: #7bff00;
+}
+.s3dProgressEditorTimeSpan{
+    position: relative;
+    width: 50px;
+    height: 100%;
+}
+.s3dProgressEditorTimeSpanInner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.s3dProgressEditorTimeSpanLine{
+    position: absolute;
+    left: 25px;
+    width: 1px;
+    height: 15px;
+    bottom: 0;
+    border-left: solid 1px #888888;
+    display: none;
+}
+.s3dProgressEditorTimeSpanText{
+    position: absolute;
+    left: 28px;
+    width: auto;
+    height: auto;
+    top: 5px;
+    font-size: 11px;
+    display: none;
+    color: #888888;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorTimeSpan{
+    width: 50px;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorTimeSpan{
+    width: 40px;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorTimeSpan{
+    width: 30px;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorTimeSpan{
+    width: 20px;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorTimeSpan{
+    width: 10px;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorTimeSpan{
+    width: 5px;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorTimeSpan{
+    width: 4px;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorTimeSpan{
+    width: 3px;
+}
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorTimeSpan{
+    width: 2px;
+}
+.s3dProgressEditorZoomLevel1 .s3dProgressEditorTimeSpan{
+    width: 1px;
+}
+
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorTimeSpanLine{
+    left: 25px;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorTimeSpanLine{
+    left: 20px;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorTimeSpanLine{
+    left: 15px;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorTimeSpanLine{
+    left: 10px;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorTimeSpanLine{
+    left: 5px;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorTimeSpanLine{
+    left: 3px;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorTimeSpanLine{
+    left: 2px;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorTimeSpanLine{
+    left: 2px;
+}
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorTimeSpanLine{
+    left: 1px;
+}
+.s3dProgressEditorZoomLevel1 .s3dProgressEditorTimeSpanLine{
+    left: 1px;
+}
+
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorTimeSpanText{
+    left: 28px;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorTimeSpanText{
+    left: 23px;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorTimeSpanText{
+    left: 18px;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorTimeSpanText{
+    left: 13px;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorTimeSpanText{
+    left: 8px;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorTimeSpanText{
+    left: 5px;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorTimeSpanText{
+    left: 5px;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorTimeSpanText{
+    left: 4px;
+}
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorTimeSpanText{
+    left: 3px;
+}
+.s3dProgressEditorZoomLevel1 .s3dProgressEditorTimeSpanText{
+    left: 3px;
+}
+
+.s3dProgressEditorZoomLevel1 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanText{
+    display: block;
+}
+
+
+.s3dProgressEditorZoomLevel1 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel1 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+.s3dProgressEditorZoomLevel1 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+.s3dProgressEditorZoomLevel2 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel3 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel4 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 10px;
+}
+.s3dProgressEditorZoomLevel5 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel6 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel7 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel8 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanLine{
+    display: block;
+    height: 5px;
+}
+
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel9 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv60 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv30 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv15 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv5 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorZoomLevel10 .s3dProgressEditorIntDiv1 .s3dProgressEditorTimeSpanLine{
+    display: block;
+}
+.s3dProgressEditorTitleCode{
+    color: #888888;
+    padding: 0 2px 0 2px;
+    cursor: default;
+}
+.s3dProgressEditorTitleName{
+    color: #FFFFFF;
+    padding: 0 2px 0 2px;
+    cursor: default;
+}
+.s3dProgressEditorTitleSubName{
+    color: #666666;
+    padding: 0 2px 0 2px;
+    cursor: default;
+}
+.s3dProgressEditorPropertyEditContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    color: #fcfcfc;
+}
+.s3dProgressEditorPropertyEditInnerContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 40px;
+    overflow-y: auto;
+}
+.s3dProgressEditorPropertyEditBottomContainer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    border-top: solid 1px #4c4c4c;
+    display: flex;
+    justify-content: right;
+}
+.s3dProgressEditorPropertyEditBtn{
+    position: relative;
+    height: 30px;
+    width: 80px;
+    margin: 5px;
+    text-align: center;
+    border: solid 1px #6A6A6A;
+    background-color: #777777;
+    border-radius: 5px;
+    color: #EEEEEE;
+    line-height: 30px;
+    cursor: pointer;
+}
+.s3dProgressEditorPropertyEditBtn:hover{
+    background-color: #DDDDDD;
+    color: #222222;
+}
+.s3dProgressEditorPropertyEditItemContainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 34px;
+}
+.s3dProgressEditorPropertyEditItemGroup{
+    position: relative;
+    width: auto;
+    height: 35px;
+    text-align: left;
+    color: #ffffff;
+    border-bottom: solid 1px #AAAAAA;
+}
+.s3dProgressEditorPropertyEditItemGroupTitle{
+    position: absolute;
+    left: 15px;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    color: #999999;
+}
+.s3dProgressEditorPropertyEditItemTitle{
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    width: 75px;
+    height: 30px;
+    text-align: left;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+}
+.s3dProgressEditorPropertyEditItemValue{
+    position: absolute;
+    left: 110px;
+    top: 3px;
+    right: 3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+.s3dProgressEditorPropertyEditItemInput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2A2A2A;
+    border-width: 0;
+    text-indent: 3px;
+}
+.s3dProgressEditorPropertyEditItemInput:focus{
+    outline: none;
+}
+.s3dProgressEditorPropertyEditItemInputReadonly{
+    color: #999999;
+}
+.s3dProgressEditorPropertyEditItemInputMultiLineString{
+    resize: none;
+}
+.s3dProgressEditorPropertyEditItemValueTransform{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+}
+.s3dProgressEditorPropertyEditItemInputTransform{
+    position: relative;
+    margin-right: 3px;
+    box-sizing: border-box;
+    width: 27%;
+}
+.s3dProgressEditorPropertyEditItemInputTransformBtn{
+    position: relative;
+    box-sizing: border-box;
+    width: 19%;
+    border: solid 1px #6A6A6A;
+    background-color: #777777;
+    cursor: pointer;
+    margin: 0 3px 0 3px;
+    border-radius: 5px;
+    text-align: center;
+}
+.s3dProgressEditorPropertyEditItemInputTransformBtn:hover{
+    color: #FFFFFF;
+}
+.s3dProgressEditorPropertyEditItemCheckboxContainer{
+    float: left;
+    height: 30px;
+    width: 150px;
+}
+.s3dProgressEditorPropertyEditItemCheckboxTitle{
+    padding: 0 20px 0 20px;
+    font-weight: 400;
+}
+.s3dProgressEditorPropertyEditItemCheckbox{
+    position: absolute;
+    margin-top: 0px !important;
+    height: 18px;
+    width: 18px;
+}
+.s3dProgressEditorPropertyEditItemInputBoolean{
+    width: 100%;
+    height: 18px;
+}
+.s3dProgressEditorTrackItemBar{
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    background-color: #24417c;
+}
+.s3dProgressEditorTrackItemBarValue{
+    position: absolute;
+    line-height: 19px;
+    height: 100%;
+    width: 100%;
+    color: #b0bdc9;
+    font-size: 11px;
+}
+.s3dProgressEditorItemActive:hover .s3dProgressEditorTrackItemBarValue{
+    font-weight: 400;
+    color: #b0bdc9;
+}
+.s3dProgressEditorTrackItemBarValueStart{
+    text-align: left;
+}
+.s3dProgressEditorTrackItemBarValueEnd{
+    text-align: right;
+}

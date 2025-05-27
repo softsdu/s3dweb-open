@@ -1,0 +1,91 @@
+.chinaAncientNavigatorContainer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+}
+.chinaAncientNavigatorInner{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.chinaAncientNavigatorPart{
+    height: 50px;
+    color: #8d8d8d;
+    opacity: 0.7;
+}
+.chinaAncientNavigatorPre{
+    width: 50px;
+    margin: 0 5px 0 5px;
+}
+.chinaAncientNavigatorNext{
+    width: 50px;
+    margin: 0 5px 0 5px;
+}
+.chinaAncientNavigatorCenter{
+    width: auto;
+    margin: 0 5px 0 5px;
+}
+.chinaAncientNavigatorPageTurnBtn{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 36px;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    text-shadow: 0 0 10px #666666;
+    text-align: center;
+    border-radius: 20px;
+}
+.chinaAncientNavigatorPageTurnBtn:hover{
+    color: #FFFFFF;
+    background-color: #444444;
+    opacity: 0.5;
+}
+.chinaAncientNavigatorPageTurnBtnPre{
+
+}
+.chinaAncientNavigatorPageTurnBtnNext{
+
+}
+.chinaAncientNavigatorPageTurnBtnDisable{
+    cursor: default;
+    color: #AAAAAA;
+}
+.chinaAncientNavigatorPageTurnBtnDisable:hover{
+    font-weight: 400;
+}
+.chinaAncientNavigatorPageList{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.chinaAncientNavigatorPageItem{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    width: 50px;
+    color: #DDDDDD;
+    text-shadow: 0 0 10px #666666;
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.chinaAncientNavigatorPageItem:hover{
+    color: #DDDDDD;
+    background-color: #444444;
+}
+.chinaAncientNavigatorPageItemActive{
+    color: #FFFFFF;
+    font-size: 28px;
+    text-shadow: 0 0 10px #888888;
+}

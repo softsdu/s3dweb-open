@@ -1,0 +1,129 @@
+.s3dAppSimpleEditorContainer{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #252525;
+}
+.s3dAppSimpleEditorInnerContainer{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.s3dAppSimpleEditorInnerContainerHidden{
+	display: none;
+}
+.s3dAppSimpleEditorGroupContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 0 20px 0;
+	background-color: #383838;
+	border-radius: 5px;
+	padding: 5px 0 10px 0;
+}
+.s3dAppSimpleEditorGroupHeader{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 35px;
+}
+.s3dAppSimpleEditorGroupTitle{
+	position: absolute;
+	left: 7px;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+	color: #999999;
+}
+.s3dAppSimpleEditorListContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.s3dAppSimpleEditorItemContainer{
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: left;
+	padding: 3px 10px 3px 20px;
+}
+.s3dAppSimpleEditorItemTitle{
+	position: relative;
+	width: 75px;
+	height: 30px;
+	text-align: left;
+	line-height: 15px;
+	padding: 8px 0 0 0;
+}
+.s3dAppSimpleEditorItemValue{
+	position: relative;
+	flex: 1;
+	height: auto;
+	line-height: 30px;
+	text-align: left;
+}
+.s3dAppSimpleEditorItemInput{
+	position: relative;
+	width: 100%;
+	right: 0;
+	height: 30px;
+	line-height: 30px;
+	background-color: #252525;
+	border-width: 0;
+	text-indent: 3px;
+}
+.s3dAppSimpleEditorItemInput:focus{
+	border-width: 1px;
+}
+.s3dAppSimpleEditorItemInputReadonly{
+	color: #999999;
+}
+.s3dAppSimpleEditorItemInputDecimal{
+}
+.s3dAppSimpleEditorItemInputBoolean {
+	width: 100%;
+	height: 20px;
+}
+.s3dAppSimpleEditorItemInputBtn {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	line-height: 30px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #444444;
+	color: #dddddd;
+}
+.s3dAppSimpleEditorItemInputBtn:hover{
+	background-color: #555555;
+	color: #FFFFFF;
+}
+.s3dAppSimpleEditorItemInputTextarea{
+	height: 195px;
+	line-height: 20px;
+	resize: none;
+	overflow-y: auto;
+}
+.s3dAppSimpleEditorItemPop{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 24px;
+	height: 30px;
+	line-height: 30px;
+	color: #444444;
+	text-align: center;
+	cursor: default;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.s3dAppSimpleEditorItemImagePicker{
+	background-image: url(../../images/materialEditor/image.png);
+}

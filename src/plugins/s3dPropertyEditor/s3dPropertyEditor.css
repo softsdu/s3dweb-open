@@ -1,0 +1,349 @@
+.s3dPropertyEditorContainer{
+	position: relative;
+    width: 100%;
+	height: 100%;
+    font-size: 13px;
+    color: #ffffff;
+	overflow: auto;
+}
+.s3dPropertyEditorInnerContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	line-height:35px;
+	text-align:center;
+	overflow-y: auto;
+}
+.s3dPropertyEditorSummaryContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.s3dPropertyEditorSummaryHeader{
+	position: relative;
+	height: 30px;
+	width: 100%;
+}
+.s3dPropertyEditorSummaryTitle{
+	position: relative;
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+}
+.s3dPropertyEditorPartContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: block;
+	overflow-y: hidden;
+}
+.s3dPropertyEditorPartContainerActive{
+}
+.s3dPropertyEditorInfoContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 5px 0 5px 0;
+	display: none;
+}
+.s3dPropertyEditorPartContainerActive .s3dPropertyEditorInfoContainer{
+	display: block;
+}
+.s3dPropertyEditorHeader{
+	position: absolute; 
+    left:8px;
+    top:2px;
+	right:8px;
+	height: 63px;
+}
+.s3dPropertyEditorTabContainer{
+	position: absolute; 
+    left:8px;
+    top:33px;
+	right:8px;
+	height: 30px;
+}
+.s3dPropertyEditorTabHeader{
+	position: relative;
+	height: 30px;
+	width: auto;
+	padding-left: 0;
+	padding-right: 8px;
+	cursor: pointer;
+	justify-content: left;
+	display: flex;
+	border-top: solid 1px #383838;
+	background-color: #464646;
+}
+.s3dPropertyEditorTabImage{
+	position: relative;
+	height:30px;
+	width: 30px;
+	line-height: 28px;
+	color: #999999;
+}
+.s3dPropertyEditorPartContainerActive .s3dPropertyEditorTabImage{
+	transform: rotate(90deg);
+}
+.s3dPropertyEditorTabTitle{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	width: auto;
+	text-align: left;
+}
+.s3dPropertyEditorSubTitle{
+	position: absolute; 
+    left:80px;
+    top:1px;
+	right:0;
+	bottom:0;
+	line-height:30px; 
+	color:#CCCCCC; 
+	font-size:14px;
+}
+.s3dPropertyEditorCloseBtn{
+	position: absolute;  
+    top:5px;
+	right:0;
+	height:24px;
+	width:20px;
+	line-height:24px;
+	font-size:24px;
+	text-align:center;
+	color:#888888;
+	cursor: default;
+}
+.s3dPropertyEditorCloseBtn:hover{
+	color:#cccccc;
+}
+.s3dPropertyEditorBackground{
+	position: absolute;	
+	width: 100%;
+	height: 100%;  
+	background-color: #444444;
+	border-radius: 5px;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+}
+.s3dPropertyEditorItemContainer{
+	position:relative; 
+    overflow: hidden;  
+    width:100%;
+	height:34px
+}
+.s3dPropertyEditorItemContainerHighlight{
+	color: #7bff00;
+}
+.s3dPropertyEditorItemGroup{
+	position:relative;
+	width: auto;
+	height: 35px;
+	text-align: left;
+	color: #ffffff;
+	border-bottom: solid 1px #AAAAAA;
+}
+.s3dPropertyEditorItemGroupTitle{
+	position: absolute;	
+	left: 15px;
+	width: auto;
+	height: 35px;
+	line-height: 35px;
+	text-align: left;
+	color: #999999;
+}
+.s3dPropertyEditorItemTitle{
+	position: absolute;
+	left: 30px;
+	top: 3px;
+	width: 75px;
+	height: 30px;
+	text-align: left;
+	line-height: 15px;
+	display: flex
+;
+	align-items: center;
+}
+.s3dPropertyEditorItemMaterialTitle{
+	width: 150px;
+}
+.s3dPropertyEditorItemValue{
+	position: absolute;	
+	left: 110px;
+	top: 3px;
+	right: 3px;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+}
+.s3dPropertyEditorItemMaterialValue{
+	left: 185px;
+}
+.s3dPropertyEditorHidden{
+	display:none;
+}
+.s3dPropertyEditorItemInput{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 30px;
+	line-height: 30px;
+	background-color: #2A2A2A;
+	border-width: 0;
+	text-indent: 3px;
+}
+.s3dPropertyEditorItemInput:focus{
+	outline: none;
+}
+.s3dPropertyEditorItemValueTransform{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: left;
+}
+.s3dPropertyEditorItemTransform{
+	position: relative;
+	margin-right: 3px; /* 可选：添加一些外边距 */
+	box-sizing: border-box; /* 确保边框和内边距包含在宽度内 */
+	width: 33.33%;
+}
+.s3dPropertyEditorItemInputString{
+}
+.s3dPropertyEditorItemInputBoolean{
+	width:100%;
+	height:20px;
+}
+.s3dPropertyEditorItemInputDecimal{
+	
+}
+.s3dPropertyEditorItemInputList{
+	
+}
+.s3dPropertyEditorItemInputReadonly{
+	color: #999999;
+}
+.s3dPropertyEditorItemInputList{
+	
+}
+.s3dPropertyEditorItemInputPop{
+	right: 24px;
+}
+.s3dPropertyEditorItemInputMaterial{
+	text-shadow: 1px 1px 1px #000000;
+	text-align: center;
+	cursor: pointer;
+}
+.s3dPropertyEditorItemPop{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 24px;
+	height: 30px;
+	line-height: 30px;
+	color: #444444;
+	background-color: #F2F2F2;
+	text-align: center;
+	cursor: default;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.s3dPropertyEditorItemSelectPoints{
+    background-image: url(../../images/propertyEditor/location.png);
+}
+.s3dPropertyEditorItemMaterialPicker{
+    background-image: url(../../images/propertyEditor/materialPicker.png);
+}
+
+.s3dPropertyEditorBottomContainer{
+	position:relative; 
+    overflow: hidden;  
+    width:100%;
+	height:45px
+}
+.s3dPropertyEditorItemBottom{
+	position: absolute;	
+	left: 10px;
+	right: 10px;
+	height: 32px;
+	text-align: left;
+	font-weight: 600;
+	color: #ffffff;
+}
+.s3dPropertyEditorSeniorApplyBtn{
+	position: absolute;	
+	width:80px;
+	top:3px;
+	right:0;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#AAAAAA;	
+	background-color: #444444;
+	cursor:pointer;
+}
+.s3dPropertyEditorSeniorApplyBtnChanged{
+	background-color: #ff8c00;
+	color:#222222;
+}
+.s3dPropertyEditorSeniorApplyBtnChanged:hover{
+	background-color: #ff9e28;
+	color:#000000;	
+}
+.s3dPropertyEditorAnimationItem{
+	position: relative;
+	height: 40px;
+	width: 100%;
+}
+.s3dPropertyEditorAnimationName{
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 110px;
+}
+.s3dPropertyEditorAnimationRunBtn{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	bottom: 5px;
+	width: 80px;
+	background-color: #ff8c00;
+	cursor: pointer;
+	border-radius: 5px;
+	line-height: 30px;
+	color: #ffffff;
+}
+.s3dPropertyEditorAnimationRunBtn:hover{
+	color: #ffffff;
+	background-color: #ff9e28;
+}
+.s3dPropertyEditorMaterialCode{
+	position: absolute;
+	right: 0;
+	top: 5px;
+	width: 50px;
+	bottom: 5px;
+	cursor: pointer;
+	font-weight: 400;
+	color: #888888;
+	line-height: 20px;
+	text-align: right;
+}
+.s3dPropertyEditorMaterialCode:hover{
+	color: #ffffff;
+	text-decoration: underline;
+}
+.s3dPropertyEditorStructureInnerContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	text-align: left;
+	line-height: 14px;
+	font-size: 10px;
+	font-family: system-ui;
+}

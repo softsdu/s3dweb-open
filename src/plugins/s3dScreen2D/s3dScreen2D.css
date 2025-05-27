@@ -1,0 +1,86 @@
+.s3dScreen2DContainer{
+	position: absolute;
+    left: 0;
+    top: 0;
+	width: 100%;
+	height: 100%;
+    font-size:13px;
+    color:#fcfcfc;
+	z-index: 10;
+	user-select: none;
+}
+.s3dScreen2DInnerContainer{
+	position: absolute;
+    left: 0;
+    top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.s3dScreen2DContentPageContainer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+.s3dScreen2DContentPageInnerContainer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.s3dScreen2DContentPageMaskContainer{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+}
+.s3dScreen2DCaptionContainer {
+	position: absolute;
+	left: 30px;
+	right: 30px;
+	bottom: 30px;
+	height: auto;
+	line-height: 40px;
+	font-size: 36px;
+	color: #f2f2f2;
+	font-family: KaiTi, serif;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	user-select: none;
+}
+.s3dScreen2DCaptionItem {
+	position: relative;
+	width: 100%;
+	min-height: 40px;
+	height: auto;
+	text-align: center;
+	animation: fadeIn 0.3s ease-in-out;
+}
+.s3dScreen2DCaptionItemOut {
+	animation: fadeOut 0.3s ease-in-out;
+}
+
+/* 定义淡入动画 */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* 定义淡出动画 */
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,276 @@
+
+.s3dSystemMaterialPickerContainer{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	color:#ffffff;
+	z-index: 99999;
+}
+.s3dSystemMaterialPickerInnerContainer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 250px;
+	bottom: 40px;
+	line-height:20px;
+	text-align:center;
+	overflow-y: auto;
+}
+.s3dSystemMaterialPickerPreviewContainer{
+	position: absolute;
+	left: 255px;
+	top: 0;
+	right: 0;
+	bottom: 40px;
+	line-height:20px;
+	text-align:center;
+	overflow-y: auto;
+}
+.s3dSystemMaterialPickerPreviewAlert{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	background-color: #000000;
+	opacity: 0.5;
+	font-size: 18px;
+}
+.s3dSystemMaterialPickerPartContainer{
+	position: absolute;
+	left: 0;
+	top: 40px;
+	right: 0;
+	bottom: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.s3dSystemMaterialPickerListHeader{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	justify-content: left;
+	display: flex;
+	cursor: pointer;
+	border-top: solid 1px #383838;
+	background-color: #464646;
+}
+.s3dSystemMaterialPickerListHeaderImage{
+	position: relative;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #999999;
+	font-size: 15px;
+	transform: rotate(0deg);
+}
+.s3dSystemMaterialPickerListHeaderTitle{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	width: auto;
+	text-align: left;
+}
+.s3dSystemMaterialPickerListContainer{
+	position: relative;
+	height: auto;
+	width: 100%;
+	justify-content: left;
+	flex-wrap: wrap;
+	display: flex;
+}
+.s3dSystemMaterialPickerListMoreContainer{
+	position: relative;
+	height: 30px;
+	width: 100%;
+}
+.s3dSystemMaterialPickerMoreBtn{
+	position: relative;
+	width: 100%;
+	height: 25px;
+	border-radius: 5px;
+	line-height: 25px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #444444;
+	color: #999999;
+}
+.s3dSystemMaterialPickerMoreBtn:hover {
+	background-color: #555555;
+	color: #FFFFFF;
+}
+.s3dSystemMaterialPickerListNoMoreContainer{
+	position: relative;
+	height: 25px;
+	width: 100%;
+	line-height: 25px;
+	text-align: center;
+	color: #888888;
+}
+.s3dSystemMaterialPickerHeader{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	height: 40px;
+}
+.s3dSystemMaterialPickerQueryInput{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #2A2A2A;
+	border-width: 0;
+	text-indent: 3px;
+}
+.s3dSystemMaterialPickerQueryInput:focus{
+	outline: none;
+}
+.s3dSystemMaterialPickerQueryInput::placeholder{
+	font-size: 14px;
+}
+.s3dSystemMaterialPickerTitle{
+	position: absolute; 
+    left:5px;
+    top: 0;
+	width:75px;
+	height:32px;
+	line-height:32px;
+	font-size:14px;
+}
+.s3dSystemMaterialPickerSubTitle{
+	position: absolute; 
+    left:80px;
+    top:1px;
+	right: 0;
+	height:32px;
+	line-height:30px;
+	font-size:14px;
+}
+.s3dSystemMaterialPickerCloseBtn{
+	position: absolute;  
+    top:5px;
+	right: 0;
+	height:24px;
+	width:20px;
+	line-height:24px;
+	font-size:24px;
+	text-align:center;
+	color:#888888;
+	cursor: default;
+}
+.s3dSystemMaterialPickerCloseBtn:hover{
+	color:#cccccc;
+}
+.s3dSystemMaterialPickerBackground{
+	position: absolute;	
+	width: 100%;
+	height: 100%;  
+	background-color: #383838;
+	border-radius: 5px;
+}
+.s3dSystemMaterialPickerItemContainer{
+	position:relative;
+	overflow: hidden;
+	width: 50%;
+	height: 120px;
+	padding: 5px;
+}
+.s3dSystemMaterialPickerItemInnerContainer{
+	position:relative;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: #383838;
+	color:#DDDDDD;
+}
+.s3dSystemMaterialPickerItemContainer:hover .s3dSystemMaterialPickerItemInnerContainer{
+	background-color: #444444;
+	color: #FFFFFF;
+}
+.s3dSystemMaterialPickerItemContainerActive .s3dSystemMaterialPickerItemInnerContainer{
+	background-color: #444444;
+	color: #7bff00;
+} 
+.s3dSystemMaterialPickerItemContainerActive:hover .s3dSystemMaterialPickerItemInnerContainer{
+	background-color: #444444;
+	color: #7bff00;
+}
+.s3dSystemMaterialPickerNoneItemContainer{
+	position:relative;
+	overflow: hidden;
+	width: 100%;
+	height: 30px;
+	margin: 5px 0 5px 0;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+.s3dSystemMaterialPickerItemCell{
+	position: relative;
+}   
+.s3dSystemMaterialPickerItemName{
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	height: 30px;
+	bottom: 0;
+	line-height: 30px;
+}
+.s3dSystemMaterialPickerItemColor{
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	top: 5px;
+	bottom: 30px;
+	background-size: cover;
+}
+.s3dSystemMaterialPickerItemOpacity{
+	width: 100px;
+}
+.s3dSystemMaterialPickerBottomContainer{
+	position: absolute;
+	height: 40px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: solid 1px #444444;
+}
+.s3dSystemMaterialPickerBottomBtn{
+	position: absolute;
+	height: 30px;
+	top: 10px;
+	width: 70px;
+	text-align: center;
+	border: solid 1px #6A6A6A;
+    background-color: #777777;
+    border-radius: 5px;
+    color: #EEEEEE;
+	line-height: 30px;
+	cursor: pointer;
+}
+.s3dSystemMaterialPickerBtnCancel{
+	right: 90px;
+}
+.s3dSystemMaterialPickerBtnOk{
+	right: 10px;
+}
+.s3dSystemMaterialPickerBottomBtn:hover{	
+	color: #222222; 
+	background-color: #DDDDDD;
+	font-weight: 600;
+}
+.s3dSystemMaterialPickerHidden{
+	display: none;
+}

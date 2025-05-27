@@ -1,0 +1,271 @@
+.basicGrayInnerContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.basicGrayHeader{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+}
+.basicGrayContent{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    padding: 0 50px 20px 50px;
+}
+.basicGrayToolbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+}
+.basicGrayTitle{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 100%;
+    height: 120px;
+    line-height: 120px;
+    font-size: 55px;
+    text-align: left;
+    letter-spacing: 6px;
+    text-shadow: 0 0 10px #444444;
+}
+.basicGraySubTitle{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 3px;
+    color: #dddddd;
+    text-shadow: 0 0 10px #444444;
+}
+.basicGrayDescription{
+    position: relative;
+    width: 100%;
+    height: auto;
+    line-height: 28px;
+    font-size: 16px;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #dddddd;
+    text-shadow: 0 0 5px #444444;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.basicGrayDescriptionFull{
+    height: auto;
+}
+.basicGrayBtn{
+    position: relative;
+    margin: 10px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 24px;
+    background-color: #2A2A2A;
+    opacity: 30%;
+}
+.basicGrayBtn:hover{
+    background-color: #2A2A2A;
+    opacity: 70%;
+}
+.basicGrayBtnHome{
+    background-image: url("../image/toolbar/home.png");
+}
+.basicGrayBtnRotate{
+    background-image: url("../image/toolbar/rotate.png");
+}
+.basicGrayBtnTag{
+    background-image: url("../image/toolbar/tag.png");
+}
+.basicGrayBtnShare{
+    background-image: url("../image/toolbar/share.png");
+}
+.basicGrayBtnLike{
+    background-image: url("../image/toolbar/like.png");
+}
+
+@media all and (max-width: 1500px){
+    .basicGrayContent{
+        padding: 0 30px 20px 30px;
+    }
+    .basicGrayTitle{
+        top: 30px;
+        left: 30px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 50px;
+        letter-spacing: 3px;
+        text-shadow: 0 0 5px #444444;
+    }
+    .basicGraySubTitle{
+        top: 110px;
+        left: 30px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 32px;
+        letter-spacing: 1px;
+        text-shadow: 0 0 3px #444444;
+    }
+    .basicGrayDescription{
+        line-height: 24px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-align: justify;
+        text-shadow: 0 0 3px #444444;
+    }
+    .basicGrayDescriptionFull{
+        height: auto;
+        -webkit-line-clamp: none;
+    }
+    .basicGrayToolbar{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        right: 0;
+        top: 20px;
+        height: 100%;
+        width: 60px;
+    }
+    .basicGrayBtn{
+        margin: 7px;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        background-size: 18px 18px;
+    }
+}
+@media all and (max-width: 1000px){
+    .basicGrayContent{
+        padding: 0 15px 10px 15px;
+    }
+    .basicGrayTitle{
+        top: 30px;
+        left: 15px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 42px;
+        letter-spacing: 3px;
+        text-shadow: 0 0 5px #444444;
+    }
+    .basicGraySubTitle{
+        top: 110px;
+        left: 15px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        text-shadow: 0 0 3px #444444;
+    }
+    .basicGrayDescription{
+        line-height: 22px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-align: justify;
+        text-shadow: 0 0 3px #444444;
+    }
+    .basicGrayDescriptionFull{
+        height: auto;
+        -webkit-line-clamp: none;
+    }
+    .basicGrayToolbar{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        flex-direction: column;
+        right: 0;
+        top: 20px;
+        height: 100%;
+        width: 60px;
+    }
+    .basicGrayBtn{
+        margin: 7px;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        background-size: 18px 18px;
+    }
+}
+@media all and (max-width: 500px){
+    .basicGrayContent{
+        padding: 0 15px 10px 15px;
+    }
+    .basicGrayTitle{
+        top: 20px;
+        left: 15px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 32px;
+        letter-spacing: 3px;
+        text-shadow: 0 0 5px #444444;
+    }
+    .basicGraySubTitle{
+        top: 90px;
+        left: 15px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-shadow: 0 0 3px #444444;
+    }
+    .basicGrayDescription{
+        line-height: 22px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-align: justify;
+        text-shadow: 0 0 3px #444444;
+    }
+    .basicGrayDescriptionFull{
+        height: auto;
+        -webkit-line-clamp: none;
+    }
+    .basicGrayToolbar{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        flex-direction: column;
+        right: 0;
+        top: 20px;
+        height: 100%;
+        width: 60px;
+    }
+    .basicGrayBtn{
+        margin: 7px;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        background-size: 18px 18px;
+    }
+}

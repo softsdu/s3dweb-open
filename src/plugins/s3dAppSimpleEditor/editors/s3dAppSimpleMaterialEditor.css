@@ -1,0 +1,400 @@
+.s3dAppSimpleMaterialEditorContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    overflow: hidden;
+}
+.s3dAppSimpleMaterialEditorSubContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: auto;
+}
+.s3dAppSimpleMaterialEditorSubContainerActive{
+    display: block;
+}
+.s3dAppSimpleMaterialEditorPartContainer{
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.s3dAppSimpleMaterialEditorToolbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+.s3dAppSimpleMaterialEditorToolbarBtn{
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin: 0 0 5px 0;
+    border-radius: 3px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #383838;
+    cursor: pointer;
+}
+.s3dAppSimpleMaterialEditorToolbarBtn:hover{
+    background-color: #666666;
+}
+.s3dAppSimpleMaterialEditorToolbarBtnBack{
+
+}
+.s3dAppSimpleMaterialEditorListHeader{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    justify-content: left;
+    display: flex;
+    cursor: pointer;
+    border-top: solid 1px #383838;
+    background-color: #464646;
+}
+.s3dAppSimpleMaterialEditorListHeaderImage{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #999999;
+    font-size: 15px;
+    transform: rotate(0deg);
+}
+.s3dAppSimpleMaterialEditorPartContainerExpand .s3dAppSimpleMaterialEditorListHeader .s3dAppSimpleMaterialEditorListHeaderImage{
+    transform: rotate(90deg);
+}
+.s3dAppSimpleMaterialEditorPartContainerExpand .s3dAppSimpleMaterialEditorListContainer{
+    display: block;
+}
+.s3dAppSimpleMaterialEditorListHeaderTitle{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: auto;
+    text-align: left;
+}
+.s3dAppSimpleMaterialEditorListContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.s3dAppSimpleMaterialEditorItem{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: left;
+    cursor: default;
+}
+.s3dAppSimpleMaterialEditorItem:hover{
+    background-color: #444444;
+}
+.s3dAppSimpleMaterialEditorItemActive{
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dAppSimpleMaterialEditorNewItem{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.s3dAppSimpleMaterialEditorNewMaterialBtn{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #444444;
+    color: #999999;
+}
+.s3dAppSimpleMaterialEditorNewMaterialImage{
+    font-size: 13px;
+    padding-right: 5px;
+}
+.s3dAppSimpleMaterialEditorNewMaterialBtn:hover{
+    background-color: #555555;
+    color: #FFFFFF;
+}
+.s3dAppSimpleMaterialEditorItemImage{
+    position: relative;
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px #666666;
+}
+.s3dAppSimpleMaterialEditorItemName{
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 50px;
+    margin-left: 5px;
+}
+.s3dAppSimpleMaterialEditorItemTitle{
+    cursor: pointer;
+}
+.s3dAppSimpleMaterialEditorItemTitle:hover{
+    text-decoration: underline;
+}
+.s3dAppSimpleMaterialEditorItemBtn{
+    position: relative;
+    width: 30px;
+    height: 100%;
+    line-height: 50px;
+    display: none;
+    text-align: center;
+}
+.s3dAppSimpleMaterialEditorItem:hover .s3dAppSimpleMaterialEditorItemBtn{
+    display: block;
+}
+
+.s3dAppSimpleMaterialEditorDetailItemInput{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2A2A2A;
+    border-width: 0;
+    color: #FFFFFF;
+}
+
+.s3dAppSimpleMaterialEditorDetailItemInputPop{
+    width: auto;
+    right: 24px;
+}
+.s3dAppSimpleMaterialEditorDetailBtnPop{
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 24px;
+    height: 28px;
+    line-height: 28px;
+    color: #444444;
+    text-align: center;
+    cursor: default;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2A2A2A;
+}
+.s3dAppSimpleMaterialEditorDetailBtnImagePicker{
+    background-image: url("../../images/materialEditor/image.png");
+}
+.s3dAppSimpleMaterialEditorDetailBtnSystemMaterialPicker{
+    background-image: url("../../images/materialEditor/systemMaterial.png");
+}
+
+.s3dAppSimpleMaterialEditorDetailContainer{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.s3dAppSimpleMaterialEditorDetailContainerReadonly{
+
+}
+.s3dAppSimpleMaterialEditorDetailToolbar{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    border-bottom: solid 1px #444444;
+}
+.s3dAppSimpleMaterialEditorDetailBtn{
+    position: absolute;
+    color: #FFFFFF;
+    background-color: #444444;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+    top: 0;
+    height: 30px;
+}
+.s3dAppSimpleMaterialEditorDetailBtn:hover{
+    background-color: #666666;
+}
+.s3dAppSimpleMaterialEditorDetailBackBtn{
+    position: absolute;
+    left: 5px;
+    width: 30px;
+}
+.s3dAppSimpleMaterialEditorDetailOkBtn {
+    position: absolute;
+    right: 5px;
+    width: 80px;
+}
+.s3dAppSimpleMaterialEditorDetailGroupContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dAppSimpleMaterialEditorDetailHeader{
+    position: relative;
+    height: 30px;
+    width: auto;
+    padding-left: 0;
+    padding-right: 8px;
+    cursor: pointer;
+    justify-content: left;
+    display: flex;
+    border-top: solid 1px #383838;
+    background-color: #464646;
+}
+.s3dAppSimpleMaterialEditorDetailHeaderImage{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+    color: #999999;
+    text-align: center;
+}
+.s3dAppSimpleMaterialEditorDetailGroupContainerActive .s3dAppSimpleMaterialEditorDetailHeaderImage {
+    transform: rotate(90deg);
+}
+.s3dAppSimpleMaterialEditorDetailHeaderTitle{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: auto;
+    text-align: left;
+}
+.s3dAppSimpleMaterialEditorDetailGroupInnerContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 5px 0 5px 0;
+    display: none;
+}
+.s3dAppSimpleMaterialEditorDetailGroupContainerActive .s3dAppSimpleMaterialEditorDetailGroupInnerContainer {
+    display: block;
+}
+.s3dAppSimpleMaterialEditorDetailItem{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 34px;
+}
+.s3dAppSimpleMaterialEditorDetailItemHidden{
+    display: none;
+}
+.s3dAppSimpleMaterialEditorDetailItemTitle{
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.s3dAppSimpleMaterialEditorDetailItemValue{
+    position: absolute;
+    left: 110px;
+    top: 3px;
+    right: 3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    color: #FCFCFC;
+}
+.s3dAppSimpleMaterialEditorDetailItemInput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2A2A2A;
+    border-width: 0;
+    color: #FFFFFF;
+}
+.s3dAppSimpleMaterialEditorDetailItemInput:focus{
+    outline: none;
+}
+.s3dAppSimpleMaterialEditorDetailContainerReadonly .s3dAppSimpleMaterialEditorDetailItemInput{
+    color: #999999;
+}
+.s3dAppSimpleMaterialEditorDetailItemInputBoolean{
+    height: 20px;
+}
+
+/*菜单*/
+.s3dAppSimpleMaterialEditorMenuOuterContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+}
+.s3dAppSimpleMaterialEditorMenuBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.s3dAppSimpleMaterialEditorMenuContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    background-color: #dddddd;
+    border: solid 1px #555555;
+    color: #000000;
+    border-radius: 3px;
+}
+.s3dAppSimpleMaterialEditorMenuItem{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    cursor: default;
+}
+.s3dAppSimpleMaterialEditorMenuItem:hover{
+    background-color: #ffffff;
+}
+.s3dAppSimpleMaterialEditorMaterialBtn{
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dAppSimpleMaterialEditorMaterialBtn:hover{
+    background-color: #444444;
+}
+.s3dAppSimpleMaterialEditorDetailBackBtn{
+
+}
+.s3dAppSimpleMaterialEditorDetailApplyBtn{
+
+}
+.s3dAppSimpleMaterialEditorDetailOkBtn{
+
+}

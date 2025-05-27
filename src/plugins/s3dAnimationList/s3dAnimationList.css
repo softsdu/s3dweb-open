@@ -1,0 +1,142 @@
+.s3dAnimationListContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+.s3dAnimationListToolbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+.s3dAnimationListAnimationBtn {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dAnimationListAnimationBtn:hover{
+    background-color: #444444;
+}
+.s3dAnimationListItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    padding-left: 15px;
+    cursor: default;
+}
+.s3dAnimationListItem:hover{
+    background-color: #444444;
+}
+.s3dAnimationListItemActive {
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dAnimationListItemName {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.s3dAnimationListItemTitle {
+    cursor: pointer;
+}
+.s3dAnimationListItemBtn {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    line-height: 30px;
+    display: none;
+    text-align: center;
+}
+.s3dAnimationListItem:hover .s3dAnimationListItemBtn{
+    display: block;
+}
+.s3dAnimationListNoneItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+/*菜单*/
+.s3dAnimationListMenuOuterContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+}
+.s3dAnimationListMenuBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.s3dAnimationListMenuContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    background-color: #dddddd;
+    border: solid 1px #555555;
+    color: #000000;
+    border-radius: 3px;
+}
+.s3dAnimationListMenuItem{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    cursor: default;
+}
+.s3dAnimationListMenuItem:hover{
+    background-color: #ffffff;
+}
+.s3dAnimationListNewItem{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.s3dAnimationListNewItemAnimationBtn{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #444444;
+    color: #999999;
+}
+.s3dAnimationListNewItemAnimationBtn:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+}
+.s3dAnimationListNewItemAnimationImage{
+    font-size: 13px;
+    padding-right: 5px;
+}

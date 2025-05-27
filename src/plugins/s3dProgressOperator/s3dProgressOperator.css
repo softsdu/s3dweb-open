@@ -1,0 +1,196 @@
+.s3dProgressOperatorContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 14px;
+}
+.s3dProgressOperatorHeaderContainer{
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+.s3dProgressOperatorHeader{
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    height: 100%;
+    border-bottom: solid 1px #666666;
+}
+.s3dProgressOperatorListTitle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 30px;
+    text-indent: 10px;
+    font-weight: 600;
+    color: #999999;
+}
+.s3dProgressOperatorListContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dProgressOperatorItem {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 0 10px 0 10px;
+}
+.s3dProgressOperatorItem:hover{
+    background-color: #444444;
+}
+.s3dProgressOperatorItemActive {
+}
+.s3dProgressOperatorItemExpand{
+}
+.s3dProgressOperatorItemHeader{
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: left;
+    cursor: default;
+}
+.s3dProgressOperatorItemActive .s3dProgressOperatorItemHeader{
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dProgressOperatorItemName {
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.s3dProgressOperatorItemIndex {
+    padding: 0 5px 0 5px;
+    color: #999999;
+}
+.s3dProgressOperatorItemTitle {
+    cursor: pointer;
+}
+.s3dProgressOperatorItemBtn {
+    position: relative;
+    width: 30px;
+    height: 100%;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    color: #999999;
+}
+.s3dProgressOperatorItemBtnExpand{
+}
+.s3dProgressOperatorItemExpand .s3dProgressOperatorItemBtnExpand{
+    transform: rotate(90deg);
+}
+.s3dProgressOperatorNoneItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-style: italic;
+}
+.s3dProgressOperatorStepContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: none;
+    padding: 0 5px 0 5px;
+}
+.s3dProgressOperatorStepItem{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #2A2A2A;
+}
+.s3dProgressOperatorStepItem:hover{
+    background-color: #444444;
+}
+.s3dProgressOperatorStepItemActive {
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dProgressOperatorStepItemName {
+    position: relative;
+    height: 30px;
+    flex-grow: 1;
+    line-height: 30px;
+    margin-left: 5px;
+}
+.s3dProgressOperatorStepItemIndex {
+    padding: 0 5px 0 5px;
+    color: #999999;
+}
+.s3dProgressOperatorStepItemTitle {
+    cursor: pointer;
+}
+.s3dProgressOperatorNoneStepItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-style: italic;
+}
+.s3dProgressOperatorItemExpand .s3dProgressOperatorStepContainer{
+    display: block;
+}
+.s3dProgressOperatorFormOuterContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.s3dProgressOperatorFormInnerContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    overflow-y: auto;
+}
+.s3dProgressOperatorFormBottomLine{
+    position: relative;
+    height: 30px;
+    padding: 10px;
+    line-height: 20px;
+}
+.s3dProgressOperatorFormBottomContainer{
+    position: absolute;
+    left: 0;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+}
+.s3dProgressOperatorFormBottomBtn{
+    position: absolute;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    width: 80px;
+    text-align: center;
+    border: solid 1px #6A6A6A;
+    background-color: #777777;
+    border-radius: 5px;
+    color: #EEEEEE;
+    line-height: 30px;
+    cursor: pointer;
+}
+.s3dProgressOperatorFormBottomBtnNext{
+}
+.s3dProgressOperatorFormBottomBtnOk{
+}
+
+ .s3dProgressOperatorFormBottomBtn:hover {
+     color: #222222;
+     background-color: #DDDDDD;
+ }
+
+

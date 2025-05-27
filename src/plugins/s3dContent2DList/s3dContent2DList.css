@@ -1,0 +1,210 @@
+.s3dContent2DListContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    overflow-y: auto;
+}
+.s3dContent2DListNavigatorContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dContent2DListPageContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dContent2DListPageListContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.s3dContent2DListHeader{
+    position: relative;
+    width: auto;
+    height: 35px;
+    text-align: left;
+    color: #ffffff;
+    padding: 0 5px 0 5px;
+    border-bottom: solid 1px #404040;
+}
+.s3dContent2DListTitle {
+    position: absolute;
+    left: 15px;
+    width: auto;
+    height: 35px;
+    line-height: 35px;
+    text-align: left;
+    color: #999999;
+}
+.s3dContent2DListNavigatorItem{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 34px;
+}
+.s3dContent2DListItemTitle{
+    position: absolute;
+    left: 30px;
+    top: 0;
+    right: 0;
+    height: 34px;
+    text-align: left;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+}
+.s3dContent2DListItemValue{
+    position: absolute;
+    left: 110px;
+    top: 3px;
+    right: 3px;
+    height: 34px;
+    line-height: 34px;
+    text-align: left;
+}
+.s3dContent2DListItemSelect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2A2A2A;
+    border-width: 0;
+    text-indent: 3px;
+}
+.s3dContent2DListItemSelect:focus{
+    outline: none;
+}
+.s3dContent2DListItem{
+    position: relative;
+    width: 100%;
+    height: 34px;
+    display: flex;
+    justify-content: left;
+    padding-left: 0;
+    cursor: default;
+}
+.s3dContent2DListItem:hover{
+    background-color: #444444;
+}
+.s3dContent2DListItemActive {
+    background-color: #444444;
+    color: #7bff00;
+}
+.s3dContent2DListItemName{
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    line-height: 34px;
+    margin-left: 5px;
+}
+.s3dContent2DListItemBtn{
+    position: relative;
+    width: 30px;
+    height: 100%;
+    line-height: 34px;
+    display: none;
+    text-align: center;
+    color: #a0c8ee;
+}
+
+.s3dContent2DListItem:hover .s3dContent2DListItemBtn{
+    display: block;
+}
+.s3dContent2DListNoneItem {
+    position: relative;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.s3dContent2DListToolbar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+    display: flex;
+}
+.s3dContent2DListPageBtn {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    line-height: 28px;
+    color: #AAAAAA;
+    cursor: default;
+    font-size: 16px;
+    text-align: center;
+    margin: 1px 5px 0 5px;
+}
+.s3dContent2DListPageBtn:hover {
+    background-color: #444444;
+}
+.s3dContent2DListNewItem {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.s3dContent2DListNewPageBtn {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    background-color: #444444;
+    color: #999999;
+}
+.s3dContent2DListNewPageBtn:hover {
+    background-color: #555555;
+    color: #FFFFFF;
+}
+.s3dContent2DListNewPageImage {
+    font-size: 13px;
+    padding-right: 5px;
+}
+.s3dContent2DListMenuOuterContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 99999;
+}
+.s3dContent2DListMenuBackground{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.s3dContent2DListMenuContainer{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    background-color: #dddddd;
+    border: solid 1px #555555;
+    color: #000000;
+    border-radius: 3px;
+}
+.s3dContent2DListMenuItem{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    cursor: default;
+}

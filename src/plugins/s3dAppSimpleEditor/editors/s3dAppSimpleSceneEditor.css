@@ -1,0 +1,9 @@
+.s3dAppSimpleEditorItemInputBtnModel{
+    background-color: #1D50B7;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+.s3dAppSimpleEditorItemInputBtnModel:hover{
+    background-color: #4678dc;
+}

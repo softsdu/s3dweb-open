@@ -1,0 +1,299 @@
+.s3dAiAssistantContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+
+.s3dAiAssistantMessageOuterContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.s3dAiAssistantMessageContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 80px;
+    right: 0;
+    overflow-y: auto;
+}
+.s3dAiAssistantInputContainer {
+    position: absolute;
+    left: 10px;
+    height: 40px;
+    bottom: 40px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.s3dAiAssistantInputMsgContainer {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    right: 80px;
+}
+.s3dAiAssistantInputMsg {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    line-height: 40px;
+    border-style: none;
+    text-indent: 10px;
+    background-color: #2A2A2A;
+}
+.s3dAiAssistantInputMsg::placeholder{
+    font-size: 14px;
+}
+.s3dAiAssistantInputMsg:focus{
+    outline: none;
+}
+.s3dAiAssistantSendBtnContainer {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 80px;
+}
+.s3dAiAssistantSendBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #0e5ba3;
+    color: #ffffff;
+    cursor: pointer;
+}
+.s3dAiAssistantSendBtn:hover{
+    background-color: #4081be;
+    font-weight: 600;
+}
+.s3dAiAssistantCancelBtnContainer {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    top: 0;
+    width: 80px;
+    display: none;
+}
+.s3dAiAssistantCancelBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    background-color: #0e5ba3;
+    color: #ffffff;
+    cursor: pointer;
+}
+.s3dAiAssistantCancelBtn:hover{
+    background-color: #4081be;
+    font-weight: 600;
+}
+.s3dAiAssistantAlertContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    right: 0;
+    overflow-y: auto;
+}
+.s3dAiAssistantAlertText {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 13px;
+    color: #999999;
+}
+.s3dAiAssistantConversationItem{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+.s3dAiAssistantConversationTitle{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    line-height: 40px;
+    right: 85px;
+    text-indent: 10px;
+    white-space: nowrap; /* 不换行 */
+    overflow: hidden; /* 隐藏超出部分 */
+    text-overflow: ellipsis; /* 显示省略号 */
+}
+.s3dAiAssistantConversationTime{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    line-height: 40px;
+    width: 80px;
+    color: #CCCCCC;
+}
+.s3dAiAssistantConversationDeleteBtn{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/aiAssistant/delete.png");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    display: none;
+}
+.s3dAiAssistantConversationItem:hover{
+    background-color: #d5e7f8;
+}
+.s3dAiAssistantConversationItem:hover .conversationDeleteBtn{
+    display: block;
+}
+.s3dAiAssistantConversationItem:hover .conversationTime{
+    display: none;
+}
+.s3dAiAssistantConversationItemActive{
+    background-color: #d9ecff;
+    font-weight: 600;
+}
+.s3dAiAssistantConversationItemActive .conversationTime{
+    color: #888888;
+    font-weight: 400;
+}
+.s3dAiAssistantUserMessageItemContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    min-height: 60px;
+    display: table;
+}
+.s3dAiAssistantUserLogo{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    border: solid 1px #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    background-image: url("../../images/aiAssistant/user.png");
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    background-position: center;
+}
+.s3dAiAssistantUserMessageText{
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 1200px;
+    margin-right: 50px;
+    margin-left: 40px;
+    min-height: 26px;
+    background-color: #2A2A2A;
+    border-radius: 5px;
+    padding: 10px;
+    float: right;
+    z-index: 2;
+}
+.s3dAiAssistantUserMessageTime{
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    height: auto;
+    color: #AAAAAA;
+    display: none;
+    top: 60px;
+    right: 5px;
+    font-size: 10px;
+}
+.s3dAiAssistantUserMessageItemContainer:hover .userMessageTime{
+    display: block;
+}
+.s3dAiAssistantAiMessageItemContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    min-height: 60px;
+    display: table;
+}
+.s3dAiAssistantAiLogo{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    border: solid 1px #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    background-image: url("../../images/aiAssistant/ai.png");
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    background-position: center;
+}
+.s3dAiAssistantAiMessageText{
+    position: relative;
+    width: auto;
+    height: auto;
+    max-width: 1200px;
+    margin-right: 40px;
+    margin-left: 50px;
+    min-height: 26px;
+    background-color: #2A2A2A;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 2;
+}
+.s3dAiAssistantAiMessageTime{
+    position: absolute;
+    width: 60px;
+    text-align: center;
+    height: auto;
+    float: left;
+    color: #AAAAAA;
+    display: none;
+    top: 60px;
+    left: 5px;
+    font-size: 10px;
+}
+.s3dAiAssistantAiMessageItemContainer:hover .aiMessageTime{
+    display: block;
+}
+.s3dAiAssistantLineHr{
+    position: absolute;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    border-color: #f4f4f4;
+}
+.s3dAiAssistantMoreHistoryMessageContainer{
+    position: relative;
+    height: 30px;
+    text-align: center;
+    margin: 10px;
+    font-size: 13px;
+}
+.s3dAiAssistantMoreHistoryMessageBtn{
+    position: relative;
+    color: #AAAAAA;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px #EEEEEE;
+    background-color: #f8f8f8;
+}
+.s3dAiAssistantNoMoreHistoryMessageBtn{
+    position: relative;
+    color: #DDDDDD;
+    padding: 5px;
+    background-color: #f8f8f8;
+}

@@ -1,0 +1,9 @@
+.s3dBody{
+    overflow: hidden;
+    background-color:#EEEEEE;
+}
+.s3dContainer{
+    position: relative;
+    width:100%;
+    height:100%
+}

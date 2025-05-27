@@ -1,0 +1,34 @@
+.s3dMessageBoxContainer {
+	position: absolute; 
+    overflow: hidden;  
+    font-size: 13px;
+	width:100%;
+	height:100%;
+	z-index: 9999;
+} 
+.s3dMessageBoxInnerContainer{
+	position: relative;
+	height: 4px;
+	top: 72%;
+	width: 50%;
+	margin: auto;
+	border-radius: 1px;
+}
+.s3dMessageBoxBackground{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #111111;
+	border-radius: 1px;
+}
+.s3dMessageBoxText{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	height: 100%;
+	background-color: #AAAAAA;
+	border-radius: 1px;
+}

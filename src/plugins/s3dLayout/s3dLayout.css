@@ -1,0 +1,202 @@
+.s3dLayoutContainer{
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+}
+.s3dLayoutContainer ::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    background-color: transparent;
+}
+.s3dLayoutContainer ::-webkit-scrollbar-thumb{
+    background-color: #666666;
+}
+.s3dLayoutContainer ::-webkit-input-placeholder {
+    color: #e0e0e0;
+    font-size: 10px;
+}
+
+.s3dLayoutContainer ::-moz-placeholder {
+    color: #e0e0e0;
+    font-size: 10px;
+}
+
+.s3dLayoutContainer ::-ms-input-placeholder {
+    color: #e0e0e0;
+    font-size: 10px;
+}
+.s3dLayoutContainer:focus{
+    outline: none;
+}
+.s3dLayoutHeader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+}
+.s3dLayoutMainContainer{
+    position: absolute;
+    left: 0;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+.s3dLayoutMainContainerNoHeader{
+    top: 0;
+}
+.s3dLayoutLeftContainer{
+    position: relative;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    max-width: 500px;
+    min-width: 200px;
+}
+.s3dLayoutCenterContainer{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+    border-left: solid 1px #191919;
+    border-right: solid 1px #191919;
+}
+.s3dLayoutRightContainer{
+    position: relative;
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    max-width: 500px;
+    min-width: 200px;
+}
+.s3dLayoutSideContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+}
+.s3dLayoutSideFullContainer{
+    height: 100%;
+}
+.s3dLayoutSectionContainer{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border-top: solid 3px #222222;
+    background-color: #383838;
+    min-height: 50px;
+}
+.s3dLayoutSectionContainerMax{
+    border-top-width: 0;
+}
+.s3dLayoutSectionHeader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: left;
+    background-color: #252525;
+}
+.s3dLayoutBlockTab{
+    position: relative;
+    width: auto;
+    min-width: 70px;
+    background-color: transparent;
+    border-top: solid 3px transparent;
+    cursor: default;
+    color: #999999;
+}
+.s3dLayoutBlockTabActive{
+    border-top: solid 3px #24417c;
+    background-color: #383838;
+    color: #ffffff;
+}
+.s3dLayoutBlockTabHidden{
+    display: none;
+}
+.s3dLayoutBlockTabTitle{
+    position: relative;
+    width: auto;
+    height: 100%;
+    padding: 3px 10px 0 10px;
+    text-align: center;
+}
+.s3dLayoutBlockTabCloseBtn{
+    font-size: 12px;
+    padding: 0 0 0 10px;
+    color: #999999;
+}
+.s3dLayoutBlockTabCloseBtn:hover{
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: default;
+}
+.s3dLayoutBlockToolbarContainer{
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+}
+.s3dLayoutBlockToolbar{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.s3dLayoutBlockToolbarActive{
+    display: block;
+}
+.s3dLayoutBlockToolbarHidden{
+    display: none;
+}
+.s3dLayoutBlocksContainer{
+    position: absolute;
+    left: 2px;
+    top: 35px;
+    right: 2px;
+    bottom: 2px;
+}
+.s3dLayoutBlocksContainerMax{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.s3dLayoutBlock{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+    overflow: hidden;
+}
+.s3dLayoutBlockActive{
+    display: block;
+}
+.s3dLayoutBlockHidden{
+    display: none;
+}
+.s3dLayoutSectionResizeVBar{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    cursor: ew-resize;
+    z-index: 2;
+}
+.vBarRight{
+    right: 0;
+}
+.vBarLeft{
+    left: 0;
+}
+.s3dLayoutSectionResizeHBar{
+    position: absolute;
+    top: 0;
+    height: 5px;
+    width: 100%;
+    cursor: ns-resize;
+    z-index: 2;
+}
+

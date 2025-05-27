@@ -1,0 +1,82 @@
+.s3dAnimationGeneratorContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+.s3dAnimationGeneratorInnerContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 40px;
+}
+.s3dAnimationGeneratorItemContainer {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+.s3dAnimationGeneratorItemTitle {
+    position: absolute;
+    left: 30px;
+    top: 3px;
+    width: 75px;
+    height: 30px;
+    text-align: left;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+}
+.s3dAnimationGeneratorItemValue {
+    position: absolute;
+    left: 100px;
+    top: 3px;
+    right: 3px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+}
+.s3dAnimationGeneratorItemInput{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    line-height: 30px;
+    background-color: #2A2A2A;
+    border-width: 0;
+    text-indent: 3px;
+}
+.s3dAnimationGeneratorItemInput:focus{
+    outline: none;
+}
+.s3dAnimationGeneratorItemInputReadonly{
+    color: #999999;
+}
+.s3dAnimationGeneratorBottomContainer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+.s3dAnimationGeneratorBtn {
+    position: absolute;
+    top: 5px;
+    height: 30px;
+    width: 80px;
+    text-align: center;
+    border: solid 1px #6A6A6A;
+    background-color: #777777;
+    border-radius: 5px;
+    color: #EEEEEE;
+    line-height: 30px;
+    cursor: pointer;
+}
+.s3dAnimationGeneratorBtnOk{
+    right: 10px;
+}
+.s3dAnimationGeneratorBtn:hover{
+    background-color: #DDDDDD;
+    color: #222222;
+}

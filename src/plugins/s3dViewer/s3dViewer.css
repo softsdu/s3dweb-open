@@ -1,0 +1,88 @@
+.s3dViewerContainer {
+	position:absolute; 
+    overflow: hidden;  
+    font-size: 13px;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+} 
+
+.s3dViewerInnerContainer{
+	position: relative;
+	width: 100%;
+	height: 100%; 	
+}
+.s3dViewerInnerContainerBackgroundImage{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: none;
+}
+.s3dViewerInnerContainerBackgroundImageActive{
+	display: block;
+}
+.s3dViewerToolbar{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.s3dViewerTitle{
+	position: relative;
+	flex-grow: 1;
+	height: 100%;
+	text-align: center;
+	line-height: 32px;
+	color: #CCCCCC;
+	font-size: 15px;
+	display: flex;
+	justify-content: center;
+}
+.s3dViewerTitleLogo{
+	position: relative;
+	display: inline-flex;
+	width: 36px;
+	height: 100%;
+	background-image: url(../../images/viewer/tada3d.png);
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.s3dViewerTitleText{
+	position: relative;
+	display: inline-block;
+}
+.s3dViewerBtns{
+	position: relative;
+	width: auto;
+	height: 100%;
+	display: flex;
+	justify-content: right;
+	margin: 2px 5px 0 5px;
+	font-family: 'KaiTi', '楷体', 'Kaiti', '新宋', 'SimSun', '宋体', 'Songti SC',"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.s3dViewerBtn{
+	position:relative;
+	overflow: hidden;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	margin: 2px;
+	background-size: 16px 16px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 3px;
+	background-color: #333333;
+}
+.s3dViewerBtn:hover{
+	background-color: #666666;
+	color: #333333;
+}
+.s3dViewerStats{
+	position: absolute;
+	right: 0;
+	top: 0;
+}

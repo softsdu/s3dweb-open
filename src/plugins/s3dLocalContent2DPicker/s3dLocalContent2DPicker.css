@@ -1,0 +1,229 @@
+
+.s3dLocalContent2DPickerContainer{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	color:#ffffff;
+	z-index: 99999;
+}
+.s3dLocalContent2DPickerInnerContainer{
+	position: absolute;
+	left:0;
+	top: 0;
+	right: 0;
+	bottom: 45px;
+	line-height:20px;
+	text-align:center;
+	overflow-y: auto;
+}
+.s3dLocalContent2DPickerPartContainer{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.s3dLocalContent2DPickerListHeader{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	justify-content: left;
+	display: flex;
+	cursor: pointer;
+	border-top: solid 1px #383838;
+	background-color: #464646;
+}
+.s3dLocalContent2DPickerListHeaderImage{
+	position: relative;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #999999;
+	font-size: 15px;
+	transform: rotate(0deg);
+}
+.s3dLocalContent2DPickerPartContainerExpand .s3dLocalContent2DPickerListHeader .s3dLocalContent2DPickerListHeaderImage{
+	transform: rotate(90deg);
+}
+.s3dLocalContent2DPickerPartContainerExpand .s3dLocalContent2DPickerListContainer{
+	display: flex;
+}
+.s3dLocalContent2DPickerListHeaderTitle{
+	position: relative;
+	height: 30px;
+	line-height: 30px;
+	width: auto;
+	text-align: left;
+}
+.s3dLocalContent2DPickerListHeaderCount{
+	color: #808080;
+	font-size: 12px;
+	padding: 0 0 0 5px;
+}
+.s3dLocalContent2DPickerListContainer{
+	position: relative;
+	height: auto;
+	width: 100%;
+	justify-content: left;
+	flex-wrap: wrap;
+	display: none;
+}
+.s3dLocalContent2DPickerHeader{
+	position: absolute; 
+    left: 10px;
+    top: 0;
+	right: 10px;
+	height: 40px;
+	border-bottom: solid 1px #555555;
+}
+.s3dLocalContent2DPickerHeaderItemContainer{
+	position: absolute; 
+    overflow: hidden;  
+    width:100%;
+	top:34px;
+	bottom: 0;
+	border-bottom: 1px solid #888888;
+}  
+.s3dLocalContent2DPickerHeaderItemCell{ 
+	top: 0;
+	bottom: 0; 
+	line-height: 21px;
+	text-align: center;
+	float:left;
+	border-right: 1px solid #888888;
+}   
+.s3dLocalContent2DPickerHeaderItemName{
+	width: 176px;
+}
+.s3dLocalContent2DPickerHeaderItemColor{
+	width: 200px;
+}
+.s3dLocalContent2DPickerHeaderItemOpacity{
+	width: 100px;
+}
+.s3dLocalContent2DPickerTitle{
+	position: absolute; 
+    left:5px;
+    top: 0;
+	width:100px;
+	height:32px;
+	line-height:32px;
+	font-size:14px;
+}
+.s3dLocalContent2DPickerSubTitle{
+	position: absolute; 
+    left:80px;
+    top:1px;
+	right: 0;
+	height:32px;
+	line-height:30px;
+	font-size:14px;
+}
+.s3dLocalContent2DPickerCloseBtn{
+	position: absolute;  
+    top:5px;
+	right: 0;
+	height:24px;
+	width:20px;
+	line-height:24px;
+	font-size:24px;
+	text-align:center;
+	color:#888888;
+	cursor: default;
+}
+.s3dLocalContent2DPickerCloseBtn:hover{
+	color:#cccccc;
+}
+.s3dLocalContent2DPickerBackground{
+	position: absolute;	
+	width: 100%;
+	height: 100%;  
+	background-color: #383838;
+	border-radius: 5px;
+}
+.s3dLocalContent2DPickerItemContainer{
+	position:relative; 
+    overflow: hidden;  
+    width: 120px;
+	height: 120px;
+	margin: 5px;
+	border-radius: 5px;
+	background-color: #444444;
+} 
+.s3dLocalContent2DPickerItemContainer:hover{
+	background-color: #AAAAAA;
+	color:#222222;
+}
+.s3dLocalContent2DPickerItemContainerActive{
+	background-color: #EEEEEE;
+	color:#111111;
+} 
+.s3dLocalContent2DPickerItemContainerActive:hover{
+	background-color: #EEEEEE;
+	color:#111111;
+}
+.s3dLocalContent2DPickerNoneItemContainer{
+	position:relative;
+	overflow: hidden;
+	width: 100%;
+	height: 30px;
+	margin: 5px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+.s3dLocalContent2DPickerItemCell{
+	position: relative;
+	width: 100%;
+}   
+.s3dLocalContent2DPickerItemName{
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 30px;
+	bottom: 0;
+	line-height: 30px;
+}
+.s3dLocalContent2DPickerItemCellImage{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.s3dLocalContent2DPickerItemCellNoneImage{
+	background-image: url("../../images/localContent2DPicker/none.jpg");
+}
+.s3dLocalContent2DPickerBottomContainer{
+	position: absolute;
+	height: 35px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+}
+.s3dLocalContent2DPickerBottomBtn{
+	position: absolute;
+	height: 30px;
+	top: 5px;
+	width: 70px;
+	text-align: center;
+	border: solid 1px #6A6A6A;
+    background-color: #777777;
+    border-radius: 5px;
+    color: #EEEEEE;
+	line-height: 30px;
+	cursor: pointer;
+}
+.s3dLocalContent2DPickerBtnClear{
+	right: 90px;
+}
+.s3dLocalContent2DPickerBtnCancel{
+	right: 10px;
+}
+.s3dLocalContent2DPickerBottomBtn:hover{	
+	color: #222222; 
+	background-color: #DDDDDD;
+	font-weight: 600;
+}
