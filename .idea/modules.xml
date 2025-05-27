@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/s3dweb-open.iml" filepath="$PROJECT_DIR$/.idea/s3dweb-open.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/wanxiang-open-web.iml" filepath="$PROJECT_DIR$/.idea/wanxiang-open-web.iml" />
     </modules>
   </component>
 </project>
