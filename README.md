@@ -1,5 +1,7 @@
 # 一、简介
-  s3dweb-open是可运行在浏览器上的三维场景编辑和展示程序。
+  s3dweb-open是可运行在浏览器上的三维场景设计工具，支持设计和运行两种状态。
+
+  本项目代码为三维场景设计的核心代码，完整项目（包含后端和前端）请关注[wanxiang-open-service](https://github.com/softsdu/wanxiang-open-service)
 
   开发语言：JavaScript。
 
